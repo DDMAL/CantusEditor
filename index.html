@@ -46,12 +46,32 @@
         var meiEditor;
         var divaInstance;
 	    var element;
-        var pageAliases;
-        var pageAliasFunction;
-        var newTotal;
 
         function editorInit(divaImageLoc, jsonLoc, currentSite, sig_slug)
         {
+            var pageAliases;
+            var pageAliasFunction;
+            var newTotal;
+            //temporary workaround until this is in the database
+            if (siglum_slug === "000")
+            {
+                pageAliases = {0: 'i'};
+                pageAliasFunction = function(index)
+                {
+                    return index + 15;
+                };
+                newTotal = 20;
+            }
+            else if (siglum_slug === "ch-sgs-390")
+            {
+                //if they're loading the six-page demo, that's static and the json file is included
+                pageAliases = {0: 'i', 1: 'ii', 2: 'iii', 3: 'iv'};
+                pageAliasFunction = function(index)
+                {
+                    return index - 3;
+                };
+                newTotal = 216;
+            }
             $("#loadingScreen").html("The Cantus MEI Editor is loading...");
 
             //create the diva wrapper and editor
@@ -264,27 +284,10 @@
                 if(siglum_slug == '000')
                 {
                     //if they're loading the six-page demo, that's static and the json file is included
-                    pageAliases = {0: 'i'};
-                    pageAliasFunction = function(index)
-                    {
-                        return index + 15;
-                    };
-                    newTotal = 20;
                     editorInit("/srv/images/meixBkup", 'csg0390demo.json', currentSite, 'ch-sgs-390');
                 }
                 else
                 {
-                    //temporary workaround until this is in the database
-                    if (siglum_slug === "ch-sgs-0390")
-                    {
-                        //if they're loading the six-page demo, that's static and the json file is included
-                        pageAliases = {0: 'i', 1: 'ii', 2: 'iii', 3: 'iv'};
-                        pageAliasFunction = function(index)
-                        {
-                            return index - 3;
-                        };
-                        newTotal = 217;
-                    }
                     //grab it off the server
                     editorInit("/srv/images/cantus/" + siglum_slug, "http://" + currentSite + "/static/" + siglum_slug + ".json", currentSite, siglum_slug);
                     
