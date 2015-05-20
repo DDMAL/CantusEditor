@@ -61,6 +61,7 @@
                 enableDownload: false,
                 enableFullscreen: false,
                 enableGridIcon: false,
+                enableImageTitles: false,
                 fixedHeightGrid: false,
                 iipServerURL: "http://diva.simssa.ca/fcgi-bin/iipsrv.fcgi",
                 objectData: jsonLoc,
@@ -82,7 +83,9 @@
                 'divaInstance': divaInstance, 
                 'oneToOneMEI': true,
                 'navbarClass': 'navbar navbar-default',
-                'pageTitle': 'Cantus Ultimus'
+                'pageTitle': 'Cantus Ultimus',
+                'initializeWithFile': 'csg-0390_015.mei',
+                'disableMultiPage': true
             };
 
             var plugins = ["meix.js/js/local/plugins/meiEditorZoneDisplay.js"];
@@ -152,7 +155,7 @@
                 });
             });
 
-            $("#dropdown-zone-display").append("<li><a>Auto-load: <input type='checkbox' style='float:right' id='auto-load-checkbox'></a></li>");
+            $("#dropdown-zone-display").append("<li><a><label class='checkbox'>Auto-load: </span><input type='checkbox' id='auto-load-checkbox'  style='float:right;'/></label></a></li>");
 
             diva.Events.subscribe("VisiblePageDidChange", function(pageNumber, fileName)
             {
