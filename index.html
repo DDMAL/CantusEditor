@@ -75,36 +75,44 @@
             $("#loadingScreen").html("The Cantus MEI Editor is loading...");
 
             //create the diva wrapper and editor
-            $('#diva-wrapper').diva(
-            {
-                adaptivePadding: 0,
-                enableAutoTitle: false,
-                enableAutoHeight: false,
-                enableAutoWidth: false,   
-                enableCanvas: false,        
-                enableDownload: false,
-                enableFullscreen: false,
-                enableGridIcon: false,
-                enableHighlight: true,
-                enableImageTitles: false,
-                enablePagealias: true,
-                fixedHeightGrid: false,
-                imageDir: divaImageLoc,
-                iipServerURL: "http://diva.simssa.ca/fcgi-bin/iipsrv.fcgi",
-                newTotalPages: newTotal,
-                objectData: jsonLoc,
-                pageAliases: pageAliases,
-                pageAliasFunction: pageAliasFunction,
-                viewerWidthPadding: 0,
-                viewerHeightPadding: 0
-            });
+            // $('#diva-wrapper').diva(
+            // {
+            //     adaptivePadding: 0,
+            //     enableAutoTitle: false,
+            //     enableAutoHeight: false,
+            //     enableAutoWidth: false,   
+            //     enableCanvas: false,        
+            //     enableDownload: false,
+            //     enableFullscreen: false,
+            //     enableGridIcon: false,
+            //     enableHighlight: true,
+            //     enableImageTitles: false,
+            //     enablePagealias: true,
+            //     fixedHeightGrid: false,
+            //     imageDir: divaImageLoc,
+            //     iipServerURL: "http://diva.simssa.ca/fcgi-bin/iipsrv.fcgi",
+            //     newTotalPages: newTotal,
+            //     objectData: jsonLoc,
+            //     pageAliases: pageAliases,
+            //     pageAliasFunction: pageAliasFunction,
+            //     viewerWidthPadding: 0,
+            //     viewerHeightPadding: 0
+            // });
+
+            $('#diva-wrapper').diva({
+                        fixedHeightGrid: true,
+                        objectData: 'https://www.e-codices.unifr.ch/metadata/iiif/csg-0390/manifest.json',
+                        enableIIIFMetadata: true,
+                        enableHighlight: true
+                    });
+
+
 
             divaInstance = $('#diva-wrapper').data('diva');
 
             element = "#mei-editor";
             var options = 
             {
-                //'initializeWithFile': 'csg-0390_015.mei',
                 'meiEditorLocation': 'meix.js/',
                 'validatorLink': 'meix.js/validation/', 
                 'xmllintLocation': 'meix.js/js/lib/xmllint.js',
@@ -112,7 +120,7 @@
                 'oneToOneMEI': true,
                 'navbarClass': 'navbar navbar-default',
                 'pageTitle': 'Cantus Ultimus',
-                'initializeWithFile': 'csg-0390_015.mei',
+                'initializeWithFile': 'csg-0390_007.mei',
                 'disableMultiPage': true
             };
 
