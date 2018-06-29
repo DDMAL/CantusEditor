@@ -1,0 +1,8 @@
+[submodule "diva.js"]
+	path = diva.js
+	url = https://github.com/DDMAL/diva.js.git
+	branch = master
+[submodule "meix.js"]
+	path = meix.js
+	url = https://github.com/DDMAL/meix.js.git
+	branch = wip/cantuseditorresucitation
