@@ -269,7 +269,7 @@
             if (!currentSite.match("127.0.0.1"))
             { //if we're not development
                 $.ajax({
-                    url: "http://" + currentSite + "/manuscripts/",
+                    url: "https://" + currentSite + "/manuscripts/",
                     success: function(e)
                     { //we're on production, make an API call to /manuscripts/
                         for(curManuscriptIndex in e)
