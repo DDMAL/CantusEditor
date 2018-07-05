@@ -198,11 +198,13 @@
             diva.Events.subscribe("VisiblePageDidChange", function(pageNumber, fileName)
             {
                 if (!$("#auto-load-checkbox").prop('checked')) return;
+                fileName = fileName.split('/');
+                fileName = fileName[fileName.length -1];
                 if (foreignPageNames.indexOf((fileName.split(".")[0] + ".mei")) > -1)
                 { 
                     var meiPage = fileName.split(".")[0] + ".mei";
                     if (meiEditor.getPageTitles().indexOf(meiPage) >= 0) return;
-                    $.get("https://" + currentSite + "/mei/" + siglum_slug + "/" + meiPage, "", function(data)
+                    $.get("https://" + currentSite + "/resources/mei/" + meiPage, "", function(data)
                     {
                         meiEditor.addFileWithoutJumping(data, meiPage);
                     });
