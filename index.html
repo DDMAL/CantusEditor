@@ -127,7 +127,7 @@
             var plugins = ["meix.js/js/local/plugins/meiEditorZoneDisplay.js"];
 
             meiEditor = new MeiEditor(element, options, plugins);
-        }
+        } 
 
         $(window).on('meiEditorLoaded', function(e){
             meiEditor = $("#mei-editor").data('AceMeiEditor');
@@ -149,7 +149,8 @@
 
             var foreignPageNames = [];
 
-            $.get("http://" + currentSite + "/mei/" + siglum_slug + "/", "", function(data)
+            //$.get("https://" + currentSite + "/mei/" + siglum_slug + "/", "", function(data)
+            $.get("https://" + currentSite + "/resources/mei/csg-390/", "", function(data)
             {
                 var dataArr = data.split("\n");
                 var dataLength = dataArr.length;
@@ -183,7 +184,8 @@
                 $("#serverLoadModal-primary").on('click', function()
                 {
                     var pageName = $("#selecthosted-file").find(':selected').text();
-                    $.get("http://" + currentSite + "/mei/" + siglum_slug + "/" + pageName, "", function(data)
+                    //$.get("https://" + currentSite + "/mei/" + siglum_slug + "/" + pageName, "", function(data)
+                    $.get("https://" + currentSite + "/resources/mei/csg-390/" + pageName, "", function(data)
                     {
                         meiEditor.addFileToProject(data, pageName);
                     });
@@ -200,7 +202,7 @@
                 { 
                     var meiPage = fileName.split(".")[0] + ".mei";
                     if (meiEditor.getPageTitles().indexOf(meiPage) >= 0) return;
-                    $.get("http://" + currentSite + "/mei/" + siglum_slug + "/" + meiPage, "", function(data)
+                    $.get("https://" + currentSite + "/mei/" + siglum_slug + "/" + meiPage, "", function(data)
                     {
                         meiEditor.addFileWithoutJumping(data, meiPage);
                     });
@@ -262,7 +264,7 @@
         
         if(siglum_slug !== undefined && siglum_slug !== "") //if there is a siglum_slug appended to the URL, we're going back to the page 
         {
-            editorInit("/srv/images/cantus/" + siglum_slug, "http://" + currentSite + "/static/" + siglum_slug + ".json", currentSite, siglum_slug); //start the editor based off what it's supposed to be
+            editorInit("/srv/images/cantus/" + siglum_slug, "https://" + currentSite + "/static/" + siglum_slug + ".json", currentSite, siglum_slug); //start the editor based off what it's supposed to be
         }
         else
         {
@@ -297,7 +299,7 @@
                 else
                 {
                     //grab it off the server
-                    editorInit("/srv/images/cantus/" + siglum_slug, "http://" + currentSite + "/static/" + siglum_slug + ".json", currentSite, siglum_slug);
+                    editorInit("/srv/images/cantus/" + siglum_slug, "https://" + currentSite + "/static/" + siglum_slug + ".json", currentSite, siglum_slug);
                     
                     //make it look like we changed URLs
                     window.history.replaceState("","", document.URL + "?" + siglum_slug);
