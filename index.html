@@ -150,7 +150,7 @@
             var foreignPageNames = [];
 
             //$.get("https://" + currentSite + "/mei/" + siglum_slug + "/", "", function(data)
-            $.get("https://" + currentSite + "/resources/mei/csg-390/", "", function(data)
+            $.get("https://" + currentSite + "/resources/mei/", "", function(data)
             {
                 var dataArr = data.split("\n");
                 var dataLength = dataArr.length;
@@ -185,7 +185,7 @@
                 {
                     var pageName = $("#selecthosted-file").find(':selected').text();
                     //$.get("https://" + currentSite + "/mei/" + siglum_slug + "/" + pageName, "", function(data)
-                    $.get("https://" + currentSite + "/resources/mei/csg-390/" + pageName, "", function(data)
+                    $.get("https://" + currentSite + "/resources/mei/" + pageName, "", function(data)
                     {
                         meiEditor.addFileToProject(data, pageName);
                     });
