@@ -150,7 +150,7 @@
             var foreignPageNames = [];
 
             //$.get("https://" + currentSite + "/mei/" + siglum_slug + "/", "", function(data)
-            $.get("https://" + currentSite + "/resources/mei/csg-390/", "", function(data)
+            $.get("https://" + currentSite + "/resources/mei/", "", function(data)
             {
                 var dataArr = data.split("\n");
                 var dataLength = dataArr.length;
@@ -185,7 +185,7 @@
                 {
                     var pageName = $("#selecthosted-file").find(':selected').text();
                     //$.get("https://" + currentSite + "/mei/" + siglum_slug + "/" + pageName, "", function(data)
-                    $.get("https://" + currentSite + "/resources/mei/csg-390/" + pageName, "", function(data)
+                    $.get("https://" + currentSite + "/resources/mei/" + pageName, "", function(data)
                     {
                         meiEditor.addFileToProject(data, pageName);
                     });
@@ -193,16 +193,18 @@
                 });
             });
 
-            $("#dropdown-zone-display").append("<li><a><label class='checkbox'>Auto-load: </span><input type='checkbox' id='auto-load-checkbox'  style='float:right;'/></label></a></li>");
+            $("#dropdown-zone-display").append("<li><a><label class='checkbox'>Auto-load: </span><input type='checkbox' id='auto-load-checkbox'  style='float:right;' checked/></label></a></li>");
 
             diva.Events.subscribe("VisiblePageDidChange", function(pageNumber, fileName)
             {
                 if (!$("#auto-load-checkbox").prop('checked')) return;
+                fileName = fileName.split('/');
+                fileName = fileName[fileName.length -1];
                 if (foreignPageNames.indexOf((fileName.split(".")[0] + ".mei")) > -1)
                 { 
                     var meiPage = fileName.split(".")[0] + ".mei";
                     if (meiEditor.getPageTitles().indexOf(meiPage) >= 0) return;
-                    $.get("https://" + currentSite + "/mei/" + siglum_slug + "/" + meiPage, "", function(data)
+                    $.get("https://" + currentSite + "/resources/mei/" + meiPage, "", function(data)
                     {
                         meiEditor.addFileWithoutJumping(data, meiPage);
                     });
