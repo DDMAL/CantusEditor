@@ -32,86 +32,159 @@
         <div id="mei-editor"></div>
         <div id="diva-wrapper"></div>
         <div id="loadingScreen">
-            <h2>Please choose a manuscript to load:</h2>
-            <select id='manuscriptSelect'>
-                <option value='000'> Sankt Gallen 390 demo </option>
-            </select><br>
+            <h2 id="loadingHeader">Please wait...</h2>
+            <select id='manuscriptSelect'></select><br>
+            <p id="manuscriptDescription"></p>
             <button id='manuscriptSubmit'>Load</button>
         </div>
     </body>
     <script>
-        var docArr = document.URL.split('/'); //0 is http:, 1 is blank, 2 is subdomain + domain, length - 1 is folio to jump to if it's defined
-        var currentSite = docArr[2];
-        // napulen: Temporary workaround for production environment in gh-pages
-        if(docArr[3] === 'CantusEditor')
-        {
-            currentSite = currentSite + "/" + docArr[3];
+        var manuscripts = {
+            'CSG-0390-ID': {
+                name: 'CSG-0390',
+                description: 'The manuscript we use for demonstration',
+                meiId: 'csg-0390',
+                meiSource: 'local',
+                iiifId: 'csg-0390',
+                iiifSource: 'e-codices'
+            },
+            'CSG-0389-ID': {
+                name: 'CSG-0390',
+                description: "A simulated entry with the exact same manuscript <br/>" +
+                             "because we are lazy but we still need to test this",
+                meiId: 'csg-0390',
+                meiSource: 'local',
+                iiifId: 'csg-0390',                
+                iiifSource: 'e-codices'
+            }
         }
-        var siglum_slug = docArr[docArr.length - 1].split('?')[1];
+        var meiSources = {
+            'local': {
+                name: 'Local folder',
+                description: 'Files stored within the CantusEditor',
+                baseURL: document.URL,
+                getMeiURL: function(meiId) {
+                    return this.baseURL + "resources/mei/" + meiId + "/";
+                }
+            }      
+        }
+        var iiifSources = {
+            'e-codices': {
+                name: 'e-codices',
+                description: 'Library of manuscripts',
+                baseURL: 'https://www.e-codices.unifr.ch/',
+                getManifestURL: function(iiifId) {
+                    return this.baseURL + 'metadata/iiif/' + iiifId + '/manifest.json';
+                }
+            }
+        }
+        var productionURL = "https://ddmal.github.io/CantusEditor/";
+        var isProduction = document.URL === productionURL ? true : false;                
+        var manuscriptList = Object.keys(manuscripts);
         var meiEditor;
         var divaInstance;
 	    var element;
+        var selectedManuscript = null;
+        if(!isProduction) {
+            console.log("Development environment detected.");
+        }  
 
-        function editorInit(divaImageLoc, jsonLoc, currentSite, sig_slug)
+        function getLinks(htmlCode, hasSubstr="") {
+            var lines = htmlCode.split("\n");
+            var links = [];
+            lines.forEach(function(line) {
+                // Ignore empty lines
+                if(!line) {
+                    return;
+                }
+                var link = line.match(/<a href=".*">/g);
+                if(link) {
+                    linkText = link[0].slice(9, -2);
+                    if(!hasSubstr || (hasSubstr && linkText.match(hasSubstr))) {
+                        links.push(linkText);
+                    }
+                }
+            });
+            return links;
+        }
+
+        manuscriptList.forEach(function(manuscriptId) {
+            var manuscript = manuscripts[manuscriptId];
+            $("#manuscriptSelect").append("<option disabled id='manuscript_" +
+              manuscriptId + "' value='" + manuscriptId + "'>" + 
+              manuscript.name + "</option>");
+            manuscript.id = manuscriptId;
+            findMeiFolders(manuscript);
+        })
+
+        $("#manuscriptSelect").change(function() {
+            manuscriptId = $("#manuscriptSelect option:selected").attr('value');
+            selectedManuscript = manuscripts[manuscriptId];
+            $('#manuscriptDescription').html(selectedManuscript.description);
+        })
+
+        $(document).ajaxStop(function() {
+            $('#loadingHeader').html("Choose a manuscript to load:");
+        });
+
+        function findMeiFolders(manuscript) {
+            var meiSource = meiSources[manuscript.meiSource];
+            $.ajax({
+                url: meiSource.getMeiURL(manuscript.meiId),
+                success: function(e) {
+                    manuscript.meiFiles = getLinks(e, ".mei");
+                    findIIIFManifest(manuscript);
+                },
+                error: function(e) {
+                    if(!isProduction) {
+                        console.log('>>> No ".mei" files found for' +
+                                    ' manuscript ' + manuscript.name);
+                    }
+                }
+            });
+        }
+
+        function findIIIFManifest(manuscript) {
+            var iiifSource = iiifSources[manuscript.iiifSource];
+            $.ajax({
+                url: iiifSource.getManifestURL(manuscript.iiifId),
+                type: "HEAD",                
+                success: function(e) {
+                    $('#manuscript_' + manuscript.id).attr('disabled', false);
+                },
+                error: function(e) {
+                    if(!isProduction) {
+                        console.log(">>> No IIIF Manifest found in " +
+                                    iiifSource.name + " for manuscript " +
+                                    manuscript.name);
+                    }
+                }
+            });
+        }
+
+        $("#manuscriptSubmit").click(function() {
+            if(selectedManuscript) {
+                editorInit(selectedManuscript);
+            }
+        });
+
+        function editorInit()
         {
             var pageAliases;
             var pageAliasFunction;
             var newTotal;
-            //temporary workaround until this is in the database
-            if (siglum_slug === "000")
-            {
-                pageAliases = {0: 'i'};
-                pageAliasFunction = function(index)
-                {
-                    return index + 15;
-                };
-                newTotal = 20;
-            }
-            else if (siglum_slug === "ch-sgs-390")
-            {
-                //if they're loading the six-page demo, that's static and the json file is included
-                pageAliases = {0: 'i', 1: 'ii', 2: 'iii', 3: 'iv'};
-                pageAliasFunction = function(index)
-                {
-                    return index - 3;
-                };
-                newTotal = 216;
-            }
+            var meiSourceRef = meiSources[selectedManuscript.meiSource];
+            var iiifSourceRef = iiifSources[selectedManuscript.iiifSource];
+            var manifestURL = iiifSourceRef.getManifestURL(selectedManuscript.iiifId);
+            var meiURL = meiSourceRef.getMeiURL(selectedManuscript.meiId);
             $("#loadingScreen").html("The Cantus MEI Editor is loading...");
-
-            //create the diva wrapper and editor
-            // $('#diva-wrapper').diva(
-            // {
-            //     adaptivePadding: 0,
-            //     enableAutoTitle: false,
-            //     enableAutoHeight: false,
-            //     enableAutoWidth: false,   
-            //     enableCanvas: false,        
-            //     enableDownload: false,
-            //     enableFullscreen: false,
-            //     enableGridIcon: false,
-            //     enableHighlight: true,
-            //     enableImageTitles: false,
-            //     enablePagealias: true,
-            //     fixedHeightGrid: false,
-            //     imageDir: divaImageLoc,
-            //     iipServerURL: "http://diva.simssa.ca/fcgi-bin/iipsrv.fcgi",
-            //     newTotalPages: newTotal,
-            //     objectData: jsonLoc,
-            //     pageAliases: pageAliases,
-            //     pageAliasFunction: pageAliasFunction,
-            //     viewerWidthPadding: 0,
-            //     viewerHeightPadding: 0
-            // });
 
             $('#diva-wrapper').diva({
                         fixedHeightGrid: true,
-                        objectData: 'https://www.e-codices.unifr.ch/metadata/iiif/csg-0390/manifest.json',
+                        objectData: manifestURL,
                         enableIIIFMetadata: true,
                         enableHighlight: true
-                    });
-
-
+            });
 
             divaInstance = $('#diva-wrapper').data('diva');
 
@@ -135,6 +208,11 @@
         } 
 
         $(window).on('meiEditorLoaded', function(e){
+            var meiSourceRef = meiSources[selectedManuscript.meiSource];
+            var iiifSourceRef = iiifSources[selectedManuscript.iiifSource];
+            var manifestURL = iiifSourceRef.getManifestURL(selectedManuscript.iiifId);
+            var meiURL = meiSourceRef.getMeiURL(selectedManuscript.meiId);
+            
             meiEditor = $("#mei-editor").data('AceMeiEditor');
             $(".diva-tools").addClass('diva-toolbar navbar navbar-default');
             $("#loadingScreen").animate({
@@ -152,65 +230,31 @@
                 $("#serverLoadModal").modal();
             });
 
-            var foreignPageNames = [];
+            var foreignPageNames = selectedManuscript.meiFiles;
 
-            //$.get("https://" + currentSite + "/mei/" + siglum_slug + "/", "", function(data)
-            $.get("https://" + currentSite + "/resources/mei/", "", function(data)
-            {
-                var dataArr = data.split("\n");
-                var dataLength = dataArr.length;
-                for(var curPage = 0; curPage < dataLength; curPage++)
-                {
-                    //that is not empty
-                    if (!dataArr[curPage])
-                    {
-                        continue;
-                    }
+            createModal(element, "serverLoadModal", false,
+                "Select a hosted file:<br>" +
+                createSelect("hosted-file", foreignPageNames, true),
+                "Load");
 
-                    //find a link
-                    var foundLink = dataArr[curPage].match(/<a href=".*">/g);
-
-                    if (foundLink)
-                    {
-                        //strip the outside, make sure it has ".rng"
-                        linkText = foundLink[0].slice(9, -2);
-                        if(linkText.match(/mei/))
-                        {
-                            foreignPageNames.push(foundLink[0].slice(9, -2));
-                        }
-                    }
-                }
-
-                createModal(element, "serverLoadModal", false,
-                    "Select a hosted file:<br>" +
-                    createSelect("hosted-file", foreignPageNames, true),
-                    "Load");
-
-                $("#serverLoadModal-primary").on('click', function()
-                {
-                    var pageName = $("#selecthosted-file").find(':selected').text();
-                    //$.get("https://" + currentSite + "/mei/" + siglum_slug + "/" + pageName, "", function(data)
-                    $.get("https://" + currentSite + "/resources/mei/" + pageName, "", function(data)
-                    {
-                        meiEditor.addFileToProject(data, pageName);
-                    });
-                    $("#serverLoadModal-close").trigger('click');
+            $("#serverLoadModal-primary").on('click', function() {
+                var pageName = $("#selecthosted-file").find(':selected').text();                
+                $.get(meiURL + pageName, "", function(data) {
+                    meiEditor.addFileToProject(data, pageName);
                 });
-            });
+                $("#serverLoadModal-close").trigger('click');
+            });        
 
             $("#dropdown-zone-display").append("<li><a><label class='checkbox'>Auto-load: </span><input type='checkbox' id='auto-load-checkbox'  style='float:right;' checked/></label></a></li>");
 
-            diva.Events.subscribe("VisiblePageDidChange", function(pageNumber, fileName)
-            {
+            diva.Events.subscribe("VisiblePageDidChange", function(pageNumber, fileName) {
                 if (!$("#auto-load-checkbox").prop('checked')) return;
                 fileName = fileName.split('/');
                 fileName = fileName[fileName.length -1];
-                if (foreignPageNames.indexOf((fileName.split(".")[0] + ".mei")) > -1)
-                { 
+                if (foreignPageNames.indexOf((fileName.split(".")[0] + ".mei")) > -1) {
                     var meiPage = fileName.split(".")[0] + ".mei";
                     if (meiEditor.getPageTitles().indexOf(meiPage) >= 0) return;
-                    $.get("https://" + currentSite + "/resources/mei/" + meiPage, "", function(data)
-                    {
+                    $.get(meiURL + meiPage, "", function(data) {
                         meiEditor.addFileWithoutJumping(data, meiPage);
                     });
                 }
@@ -249,13 +293,13 @@
                     nextNeume.parentElement.insertBefore(indentNode, nextNeume);
                 }
 
-                else 
+                else
                 {
                     indentNode = prevNeume.parentElement.childNodes[prevIdx - 1].cloneNode(false);
 
                     inserted = prevNeume.insertAdjacentElement("afterEnd", toInsert);
                     inserted.parentElement.insertBefore(indentNode, inserted);
-                }    
+                }
 
                 rewriteAce(pageRef);
 
@@ -268,50 +312,5 @@
 
             });
         });
-        
-        if(siglum_slug !== undefined && siglum_slug !== "") //if there is a siglum_slug appended to the URL, we're going back to the page 
-        {
-            editorInit("/srv/images/cantus/" + siglum_slug, "https://" + currentSite + "/static/" + siglum_slug + ".json", currentSite, siglum_slug); //start the editor based off what it's supposed to be
-        }
-        else
-        {
-            if (!currentSite.match("127.0.0.1"))
-            { //if we're not development
-                $.ajax({
-                    url: "https://" + currentSite + "/manuscripts/",
-                    success: function(e)
-                    { //we're on production, make an API call to /manuscripts/
-                        for(curManuscriptIndex in e)
-                        { 
-                            //add an option for each manuscript
-                            $("#manuscriptSelect").append("<option value='" + e[curManuscriptIndex].siglum_slug + "'>" + e[curManuscriptIndex].name + "</option>");
-                        }
-                    },
-                    error: function(e)
-                    {
-                        console.log("Couldn't find the manuscripts. Just loading demo Diva.");
-                    }
-                });
-            }
-
-            $("#manuscriptSubmit").on('click', function()
-            {
-                //when the user selects a manuscript to load
-                siglum_slug = $($("#manuscriptSelect").find(":selected")).attr('value');
-                if(siglum_slug == '000')
-                {
-                    //if they're loading the six-page demo, that's static and the json file is included
-                    editorInit("/srv/images/meixBkup", 'csg0390demo.json', currentSite, 'ch-sgs-390');
-                }
-                else
-                {
-                    //grab it off the server
-                    editorInit("/srv/images/cantus/" + siglum_slug, "https://" + currentSite + "/static/" + siglum_slug + ".json", currentSite, siglum_slug);
-                    
-                    //make it look like we changed URLs
-                    window.history.replaceState("","", document.URL + "?" + siglum_slug);
-                }
-            });
-        }
     </script>
 </html> 
