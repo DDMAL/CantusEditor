@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="meix.js/css/meiEditor.css" />
         <link rel="stylesheet" href="meix.js/css/zoneDisplay.css" />
         <link rel="stylesheet" href="divaEditor.css" />
-        <link rel="Shortcut Icon" href="/favicon.ico">
+        <link rel="Shortcut Icon" href="favicon.ico">
 
         <!--foreign libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
@@ -54,7 +54,7 @@
                              "because we are lazy but we still need to test this",
                 meiId: 'csg-0390',
                 meiSource: 'local',
-                iiifId: 'csg-0390',                
+                iiifId: 'csg-0390',
                 iiifSource: 'e-codices'
             }
         }
@@ -79,7 +79,7 @@
             }
         }
         var productionURL = "https://ddmal.github.io/CantusEditor/";
-        var isProduction = document.URL === productionURL ? true : false;                
+        var isProduction = document.URL === productionURL ? true : false;
         var manuscriptList = Object.keys(manuscripts);
         var meiEditor;
         var divaInstance;
@@ -129,10 +129,12 @@
 
         function findMeiFolders(manuscript) {
             var meiSource = meiSources[manuscript.meiSource];
+            var meiURL = meiSource.getMeiURL(manuscript.meiId)            
             $.ajax({
-                url: meiSource.getMeiURL(manuscript.meiId),
+                url: meiURL,
                 success: function(e) {
-                    manuscript.meiFiles = getLinks(e, ".mei");
+                    manuscript.meiURL = meiURL;
+                    manuscript.meiFiles = getLinks(e, ".mei");                    
                     findIIIFManifest(manuscript);
                 },
                 error: function(e) {
@@ -146,11 +148,13 @@
 
         function findIIIFManifest(manuscript) {
             var iiifSource = iiifSources[manuscript.iiifSource];
+            manifestURL = iiifSource.getManifestURL(manuscript.iiifId);
             $.ajax({
-                url: iiifSource.getManifestURL(manuscript.iiifId),
+                url: manifestURL,
                 type: "HEAD",                
-                success: function(e) {
+                success: function(e) {                    
                     $('#manuscript_' + manuscript.id).attr('disabled', false);
+                    manuscript.manifestURL = manifestURL;
                 },
                 error: function(e) {
                     if(!isProduction) {
@@ -162,26 +166,17 @@
             });
         }
 
-        $("#manuscriptSubmit").click(function() {
-            if(selectedManuscript) {
-                editorInit(selectedManuscript);
-            }
-        });
+        $("#manuscriptSubmit").click(loadManuscript);
 
-        function editorInit()
-        {
-            var pageAliases;
-            var pageAliasFunction;
-            var newTotal;
-            var meiSourceRef = meiSources[selectedManuscript.meiSource];
-            var iiifSourceRef = iiifSources[selectedManuscript.iiifSource];
-            var manifestURL = iiifSourceRef.getManifestURL(selectedManuscript.iiifId);
-            var meiURL = meiSourceRef.getMeiURL(selectedManuscript.meiId);
+        function loadManuscript() {
+            // Ignore the call if there is no selected manuscript.
+            if(!selectedManuscript) return;
+                    
             $("#loadingScreen").html("The Cantus MEI Editor is loading...");
 
             $('#diva-wrapper').diva({
                         fixedHeightGrid: true,
-                        objectData: manifestURL,
+                        objectData: selectedManuscript.manifestURL,
                         enableIIIFMetadata: true,
                         enableHighlight: true
             });
@@ -189,29 +184,26 @@
             divaInstance = $('#diva-wrapper').data('diva');
 
             element = "#mei-editor";
-            var options = 
+            var options =
             {
                 'meiEditorLocation': 'meix.js/',
-                'validatorLink': 'meix.js/validation/', 
+                'validatorLink': 'meix.js/validation/',
                 'xmllintLocation': 'meix.js/js/lib/xmllint.js',
-                'divaInstance': divaInstance, 
+                'divaInstance': divaInstance,
                 'oneToOneMEI': true,
                 'navbarClass': 'navbar navbar-default',
                 'pageTitle': 'Cantus Ultimus',
-                'initializeWithFile': 'csg-0390_007.mei',
                 'disableMultiPage': true
             };
 
-            var plugins = ["meix.js/js/local/plugins/meiEditorZoneDisplay.js"];
+            var meiEditorPlugins = 
+            ["meix.js/js/local/plugins/meiEditorZoneDisplay.js"];
 
-            meiEditor = new MeiEditor(element, options, plugins);
+            meiEditor = new MeiEditor(element, options, meiEditorPlugins);
         } 
 
-        $(window).on('meiEditorLoaded', function(e){
-            var meiSourceRef = meiSources[selectedManuscript.meiSource];
-            var iiifSourceRef = iiifSources[selectedManuscript.iiifSource];
-            var manifestURL = iiifSourceRef.getManifestURL(selectedManuscript.iiifId);
-            var meiURL = meiSourceRef.getMeiURL(selectedManuscript.meiId);
+        $(window).on('meiEditorLoaded', function(e) {
+            var meiURL = selectedManuscript.meiURL;
             
             meiEditor = $("#mei-editor").data('AceMeiEditor');
             $(".diva-tools").addClass('diva-toolbar navbar navbar-default');
@@ -238,12 +230,12 @@
                 "Load");
 
             $("#serverLoadModal-primary").on('click', function() {
-                var pageName = $("#selecthosted-file").find(':selected').text();                
+                var pageName = $("#selecthosted-file").find(':selected').text();
                 $.get(meiURL + pageName, "", function(data) {
                     meiEditor.addFileToProject(data, pageName);
                 });
                 $("#serverLoadModal-close").trigger('click');
-            });        
+            })
 
             $("#dropdown-zone-display").append("<li><a><label class='checkbox'>Auto-load: </span><input type='checkbox' id='auto-load-checkbox'  style='float:right;' checked/></label></a></li>");
 
@@ -308,8 +300,6 @@
                     meiEditor.selectHighlight("#" + curID);
                     meiEditor.events.unsubscribe(newZoneHandler);
                 });
-
-
             });
         });
     </script>
