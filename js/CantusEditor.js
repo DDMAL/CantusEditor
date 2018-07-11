@@ -1,4 +1,26 @@
 window.onload = function() {
+    "use strict";
+    var productionURL = "https://ddmal.github.io/CantusEditor/";
+    var isProduction = document.URL === productionURL ? true : false;
+    if(!isProduction) {
+        console.log("Development environment detected.");
+    }
+    // Obtained from the data.js file
+    var manuscripts = document.manuscripts;
+    var meiSources = document.meiSources;
+    var iiifSources = document.iiifSources;
+    var manuscriptList = Object.keys(manuscripts);
+    var meiEditor;
+    var divaInstance;
+    var element;
+    var selectedManuscript = null;
+
+    manuscriptList.forEach(addManuscript);
+    $(document).ajaxStop(allManuscriptsAdded);
+    $("#manuscriptSelect").change(updateSelectedManuscript);
+    $("#manuscriptSubmit").click(loadManuscript);
+    $(window).on('meiEditorLoaded', meiEditorLoaded);
+
     function addManuscript(manuscriptId) {
         var manuscript = manuscripts[manuscriptId];
         $("#manuscriptSelect").append("<option disabled id='manuscript_" +
@@ -27,28 +49,28 @@ window.onload = function() {
         });
     }
 
-    function getLinks(htmlCode, hasSubstr="") {
+    function getLinks(htmlCode, hasSubstr) {
         var lines = htmlCode.split("\n");
         var links = [];
         lines.forEach(function(line) {
-    // Ignore empty lines
-    if(!line) {
-        return;
-    }
-    var link = line.match(/<a href=".*">/g);
-    if(link) {
-        linkText = link[0].slice(9, -2);
-        if(!hasSubstr || (hasSubstr && linkText.match(hasSubstr))) {
-            links.push(linkText);
+        // Ignore empty lines
+        if(!line) {
+            return;
         }
-    }
-    });
+        var link = line.match(/<a href=".*">/g);
+        if(link) {
+            var linkText = link[0].slice(9, -2);
+            if(!hasSubstr || (hasSubstr && linkText.match(hasSubstr))) {
+                links.push(linkText);
+            }
+        }
+        });
         return links;
     }
 
     function fetchIIIFManifest(manuscript) {
         var iiifSource = iiifSources[manuscript.iiifSource];
-        manifestURL = iiifSource.getManifestURL(manuscript.iiifId);
+        var manifestURL = iiifSource.getManifestURL(manuscript.iiifId);
         $.ajax({
             url: manifestURL,
             type: "HEAD",                
@@ -67,7 +89,7 @@ window.onload = function() {
     }
 
     function updateSelectedManuscript() {
-        manuscriptId = $("#manuscriptSelect option:selected").attr('value');
+        var manuscriptId = $("#manuscriptSelect option:selected").attr('value');
         selectedManuscript = manuscripts[manuscriptId];
         $('#manuscriptDescription').html(selectedManuscript.description);
     }
@@ -77,37 +99,37 @@ window.onload = function() {
     }        
 
     function loadManuscript() {
-    // Ignore the call if there is no selected manuscript.
-    if(!selectedManuscript) return;
+        // Ignore the call if there is no selected manuscript.
+        if(!selectedManuscript) return;
 
-    $("#loadingScreen").html("The Cantus MEI Editor is loading...");
+        $("#loadingScreen").html("The Cantus MEI Editor is loading...");
 
-    $('#diva-wrapper').diva({
-        fixedHeightGrid: true,
-        objectData: selectedManuscript.manifestURL,
-        enableIIIFMetadata: true,
-        enableHighlight: true
-    });
+        $('#diva-wrapper').diva({
+            fixedHeightGrid: true,
+            objectData: selectedManuscript.manifestURL,
+            enableIIIFMetadata: true,
+            enableHighlight: true
+        });
 
-    divaInstance = $('#diva-wrapper').data('diva');
+        divaInstance = $('#diva-wrapper').data('diva');
 
-    element = "#mei-editor";
-    var options =
-    {
-        'meiEditorLocation': 'meix.js/',
-        'validatorLink': 'meix.js/validation/',
-        'xmllintLocation': 'meix.js/js/lib/xmllint.js',
-        'divaInstance': divaInstance,
-        'oneToOneMEI': true,
-        'navbarClass': 'navbar navbar-default',
-        'pageTitle': 'Cantus Ultimus',
-        'disableMultiPage': true
-    };
+        element = "#mei-editor";
+        var options =
+        {
+            meiEditorLocation: 'meix.js/',
+            validatorLink: 'meix.js/validation/',
+            xmllintLocation: 'meix.js/js/lib/xmllint.js',
+            divaInstance: divaInstance,
+            oneToOneMEI: true,
+            navbarClass: 'navbar navbar-default',
+            pageTitle: 'Cantus Ultimus',
+            disableMultiPage: true
+        };
 
-    var meiEditorPlugins = 
-    ["meix.js/js/local/plugins/meiEditorZoneDisplay.js"];
+        var meiEditorPlugins = 
+        ["meix.js/js/local/plugins/meiEditorZoneDisplay.js"];
 
-    meiEditor = new MeiEditor(element, options, meiEditorPlugins);
+        meiEditor = new MeiEditor(element, options, meiEditorPlugins);
     }
 
     function meiEditorLoaded(e) {
@@ -154,9 +176,9 @@ window.onload = function() {
 
     function renderLoadingAnimation() {
         $("#loadingScreen").animate({
-            'height': '30px',
+            height: '30px',
             'line-height': '30px',
-            'opacity': '0'
+            opacity: '0'
         }, {
             duration: 300,
             complete: function(){$("#loadingScreen").remove();}
@@ -221,27 +243,7 @@ window.onload = function() {
             'ZonesWereUpdated', function() {
                 meiEditor.selectHighlight("#" + curID);
                 meiEditor.events.unsubscribe(newZoneHandler);
-            });
+            }
+        );
     }
-    var productionURL = "https://ddmal.github.io/CantusEditor/";
-    var isProduction = document.URL === productionURL ? true : false;
-    if(!isProduction){
-        console.log("Development environment detected.");
-    }
-    // Obtained from the data.js file
-    var manuscripts = document.manuscripts;
-    var meiSources = document.meiSources;
-    var iiifSources = document.iiifSources;
-    var manuscriptList = Object.keys(manuscripts);
-    var meiEditor;
-    var divaInstance;
-    var element;
-    var selectedManuscript = null;
-
-    manuscriptList.forEach(addManuscript);
-    $(document).ajaxStop(allManuscriptsAdded);
-    $("#manuscriptSelect").change(updateSelectedManuscript);
-    $("#manuscriptSubmit").click(loadManuscript);
-    $(window).on('meiEditorLoaded', meiEditorLoaded);
 };
-
