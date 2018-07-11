@@ -2,7 +2,7 @@ window.onload = function() {
     "use strict";
     var productionURL = "https://ddmal.github.io/CantusEditor/";
     var isProduction = document.URL === productionURL ? true : false;
-    if(!isProduction){
+    if(!isProduction) {
         console.log("Development environment detected.");
     }
     // Obtained from the data.js file
@@ -53,24 +53,24 @@ window.onload = function() {
         var lines = htmlCode.split("\n");
         var links = [];
         lines.forEach(function(line) {
-    // Ignore empty lines
-    if(!line) {
-        return;
-    }
-    var link = line.match(/<a href=".*">/g);
-    if(link) {
-        linkText = link[0].slice(9, -2);
-        if(!hasSubstr || (hasSubstr && linkText.match(hasSubstr))) {
-            links.push(linkText);
+        // Ignore empty lines
+        if(!line) {
+            return;
         }
-    }
-    });
+        var link = line.match(/<a href=".*">/g);
+        if(link) {
+            var linkText = link[0].slice(9, -2);
+            if(!hasSubstr || (hasSubstr && linkText.match(hasSubstr))) {
+                links.push(linkText);
+            }
+        }
+        });
         return links;
     }
 
     function fetchIIIFManifest(manuscript) {
         var iiifSource = iiifSources[manuscript.iiifSource];
-        manifestURL = iiifSource.getManifestURL(manuscript.iiifId);
+        var manifestURL = iiifSource.getManifestURL(manuscript.iiifId);
         $.ajax({
             url: manifestURL,
             type: "HEAD",                
@@ -89,7 +89,7 @@ window.onload = function() {
     }
 
     function updateSelectedManuscript() {
-        manuscriptId = $("#manuscriptSelect option:selected").attr('value');
+        var manuscriptId = $("#manuscriptSelect option:selected").attr('value');
         selectedManuscript = manuscripts[manuscriptId];
         $('#manuscriptDescription').html(selectedManuscript.description);
     }
@@ -116,14 +116,14 @@ window.onload = function() {
     element = "#mei-editor";
     var options =
     {
-        'meiEditorLocation': 'meix.js/',
-        'validatorLink': 'meix.js/validation/',
-        'xmllintLocation': 'meix.js/js/lib/xmllint.js',
-        'divaInstance': divaInstance,
-        'oneToOneMEI': true,
-        'navbarClass': 'navbar navbar-default',
-        'pageTitle': 'Cantus Ultimus',
-        'disableMultiPage': true
+        meiEditorLocation: 'meix.js/',
+        validatorLink: 'meix.js/validation/',
+        xmllintLocation: 'meix.js/js/lib/xmllint.js',
+        divaInstance: divaInstance,
+        oneToOneMEI: true,
+        navbarClass: 'navbar navbar-default',
+        pageTitle: 'Cantus Ultimus',
+        disableMultiPage: true
     };
 
     var meiEditorPlugins = 
@@ -176,9 +176,9 @@ window.onload = function() {
 
     function renderLoadingAnimation() {
         $("#loadingScreen").animate({
-            'height': '30px',
+            height: '30px',
             'line-height': '30px',
-            'opacity': '0'
+            opacity: '0'
         }, {
             duration: 300,
             complete: function(){$("#loadingScreen").remove();}
