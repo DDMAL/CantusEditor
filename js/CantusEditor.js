@@ -99,37 +99,37 @@ window.onload = function() {
     }        
 
     function loadManuscript() {
-    // Ignore the call if there is no selected manuscript.
-    if(!selectedManuscript) return;
+        // Ignore the call if there is no selected manuscript.
+        if(!selectedManuscript) return;
 
-    $("#loadingScreen").html("The Cantus MEI Editor is loading...");
+        $("#loadingScreen").html("The Cantus MEI Editor is loading...");
 
-    $('#diva-wrapper').diva({
-        fixedHeightGrid: true,
-        objectData: selectedManuscript.manifestURL,
-        enableIIIFMetadata: true,
-        enableHighlight: true
-    });
+        $('#diva-wrapper').diva({
+            fixedHeightGrid: true,
+            objectData: selectedManuscript.manifestURL,
+            enableIIIFMetadata: true,
+            enableHighlight: true
+        });
 
-    divaInstance = $('#diva-wrapper').data('diva');
+        divaInstance = $('#diva-wrapper').data('diva');
 
-    element = "#mei-editor";
-    var options =
-    {
-        meiEditorLocation: 'meix.js/',
-        validatorLink: 'meix.js/validation/',
-        xmllintLocation: 'meix.js/js/lib/xmllint.js',
-        divaInstance: divaInstance,
-        oneToOneMEI: true,
-        navbarClass: 'navbar navbar-default',
-        pageTitle: 'Cantus Ultimus',
-        disableMultiPage: true
-    };
+        element = "#mei-editor";
+        var options =
+        {
+            meiEditorLocation: 'meix.js/',
+            validatorLink: 'meix.js/validation/',
+            xmllintLocation: 'meix.js/js/lib/xmllint.js',
+            divaInstance: divaInstance,
+            oneToOneMEI: true,
+            navbarClass: 'navbar navbar-default',
+            pageTitle: 'Cantus Ultimus',
+            disableMultiPage: true
+        };
 
-    var meiEditorPlugins = 
-    ["meix.js/js/local/plugins/meiEditorZoneDisplay.js"];
+        var meiEditorPlugins = 
+        ["meix.js/js/local/plugins/meiEditorZoneDisplay.js"];
 
-    meiEditor = new MeiEditor(element, options, meiEditorPlugins);
+        meiEditor = new MeiEditor(element, options, meiEditorPlugins);
     }
 
     function meiEditorLoaded(e) {
@@ -243,7 +243,7 @@ window.onload = function() {
             'ZonesWereUpdated', function() {
                 meiEditor.selectHighlight("#" + curID);
                 meiEditor.events.unsubscribe(newZoneHandler);
-            });
-    }    
+            }
+        );
+    }
 };
-
