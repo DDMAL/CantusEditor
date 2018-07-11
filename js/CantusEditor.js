@@ -1,4 +1,26 @@
 window.onload = function() {
+    "use strict";
+    var productionURL = "https://ddmal.github.io/CantusEditor/";
+    var isProduction = document.URL === productionURL ? true : false;
+    if(!isProduction){
+        console.log("Development environment detected.");
+    }
+    // Obtained from the data.js file
+    var manuscripts = document.manuscripts;
+    var meiSources = document.meiSources;
+    var iiifSources = document.iiifSources;
+    var manuscriptList = Object.keys(manuscripts);
+    var meiEditor;
+    var divaInstance;
+    var element;
+    var selectedManuscript = null;
+
+    manuscriptList.forEach(addManuscript);
+    $(document).ajaxStop(allManuscriptsAdded);
+    $("#manuscriptSelect").change(updateSelectedManuscript);
+    $("#manuscriptSubmit").click(loadManuscript);
+    $(window).on('meiEditorLoaded', meiEditorLoaded);
+
     function addManuscript(manuscriptId) {
         var manuscript = manuscripts[manuscriptId];
         $("#manuscriptSelect").append("<option disabled id='manuscript_" +
@@ -27,7 +49,7 @@ window.onload = function() {
         });
     }
 
-    function getLinks(htmlCode, hasSubstr="") {
+    function getLinks(htmlCode, hasSubstr) {
         var lines = htmlCode.split("\n");
         var links = [];
         lines.forEach(function(line) {
@@ -222,26 +244,6 @@ window.onload = function() {
                 meiEditor.selectHighlight("#" + curID);
                 meiEditor.events.unsubscribe(newZoneHandler);
             });
-    }
-    var productionURL = "https://ddmal.github.io/CantusEditor/";
-    var isProduction = document.URL === productionURL ? true : false;
-    if(!isProduction){
-        console.log("Development environment detected.");
-    }
-    // Obtained from the data.js file
-    var manuscripts = document.manuscripts;
-    var meiSources = document.meiSources;
-    var iiifSources = document.iiifSources;
-    var manuscriptList = Object.keys(manuscripts);
-    var meiEditor;
-    var divaInstance;
-    var element;
-    var selectedManuscript = null;
-
-    manuscriptList.forEach(addManuscript);
-    $(document).ajaxStop(allManuscriptsAdded);
-    $("#manuscriptSelect").change(updateSelectedManuscript);
-    $("#manuscriptSubmit").click(loadManuscript);
-    $(window).on('meiEditorLoaded', meiEditorLoaded);
+    }    
 };
 
