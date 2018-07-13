@@ -29,7 +29,7 @@ window.onload = function () {
         var lines = htmlCode.split("\n");
         var links = [];
         lines.forEach(function (line) {
-        // Ignore empty lines
+            // Ignore empty lines
             if (!line) {
                 return;
             }
