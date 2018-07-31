@@ -3,7 +3,7 @@
     document.manuscripts = {
         "CSG-0390-ID": {
             name: "St. Gallen, CSG-390",
-            description: "Winter volume of the so-called Hartker Antiphonary",
+            description: "",
             meiId: "csg-0390",
             meiSource: "local",
             iiifId: "csg-0390",
