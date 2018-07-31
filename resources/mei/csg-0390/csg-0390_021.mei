@@ -1,0 +1,771 @@
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="2013" xml:id="m-9e7133cb-1137-4ed1-a848-33cad69ba4a4">
+  <meiHead xml:id="m-c59065e1-1fd4-475a-9a4c-6033199ef9e6">
+    <fileDesc xml:id="m-997d557e-301a-4d89-b58c-9a9417ce583b">
+      <titleStmt xml:id="m-8d605cd5-290a-4559-8cad-732bc37fc56f">
+        <title xml:id="m-d53315aa-28f3-4ec0-b212-2f6da6b2d8f0" />
+      </titleStmt>
+      <pubStmt xml:id="m-59477f32-f30b-4c8b-9918-75a700ba9aa6">
+        <date xml:id="m-c109cdc5-fd1c-41ab-93b9-b7e0314cd915" />
+      </pubStmt>
+    </fileDesc>
+    <encodingDesc xml:id="m-4c50f7e1-39ab-47c4-9ae2-fe7af93ac140">
+      <projectDesc xml:id="m-d5161e64-4144-4395-89b4-479e9675839d">
+        <p xml:id="m-24ea654c-52fe-4f0d-a8d9-8eab3912b7ca" />
+      </projectDesc>
+    </encodingDesc>
+  </meiHead>
+  <music xml:id="m-008a76e0-12f5-4eb7-8072-a67664b05541">
+    <facsimile xml:id="m-c34e4217-c1f7-4eb5-acd5-afc8e1d83aca">
+      <surface xml:id="m-6fc760c1-2bd7-4a3e-8152-b7c5b1f3c322">
+        <zone lrx="965" lry="773" ulx="903" uly="711" xml:id="m-f7e2dc59-1f9b-4daa-95f3-a49fb427eb9b" />
+        <zone lrx="1062" lry="763" ulx="1025" uly="745" xml:id="m-60fc9cda-c524-4e9f-b4f4-cff47e8eac79" />
+        <zone lrx="1214" lry="760" ulx="1156" uly="714" xml:id="m-12c10537-7205-4c0c-9537-99c8472515aa" />
+        <zone lrx="1447" lry="771" ulx="1383" uly="714" xml:id="m-0c0fa81d-0a1c-410d-aa6b-b0e703487e1c" />
+        <zone lrx="1599" lry="772" ulx="1566" uly="756" xml:id="m-53b007d5-4f0a-42d2-9dfe-de40395d2f60" />
+        <zone lrx="1728" lry="781" ulx="1665" uly="720" xml:id="m-183486db-efbb-4d31-a4ae-adb0ec06a59a" />
+        <zone lrx="1942" lry="792" ulx="1886" uly="709" xml:id="m-b0eca1f1-e133-423d-a15b-de2278ee34a9" />
+        <zone lrx="2144" lry="767" ulx="2081" uly="710" xml:id="m-aefe2190-d512-4c8a-a5b4-75d9d2540036" />
+        <zone lrx="2325" lry="762" ulx="2246" uly="705" xml:id="m-211db137-d422-42a5-9524-b59bb83fbe29" />
+        <zone lrx="2364" lry="684" ulx="2332" uly="650" xml:id="m-8209f21d-7deb-4dcb-b085-775468d41ccd" />
+        <zone lrx="2518" lry="776" ulx="2487" uly="762" xml:id="m-f9ce0d6b-9f5c-41f9-b89c-806748cc14c0" />
+        <zone lrx="2654" lry="773" ulx="2621" uly="760" xml:id="m-f8b2ef0b-607b-4675-af3b-abd543df9106" />
+        <zone lrx="860" lry="1131" ulx="830" uly="1118" xml:id="m-8909e198-7e6f-471c-b4b9-fced522974e4" />
+        <zone lrx="1128" lry="1140" ulx="1074" uly="1082" xml:id="m-ce1aa4cb-b883-479f-9585-fa3824c73543" />
+        <zone lrx="1263" lry="1117" ulx="1208" uly="1058" xml:id="m-c6dd5fc4-6d49-4d43-be4f-d14017a534e7" />
+        <zone lrx="1440" lry="1106" ulx="1386" uly="1049" xml:id="m-b4fabde4-4e4c-4e87-aa33-a6f9bdd337dc" />
+        <zone lrx="1706" lry="1097" ulx="1650" uly="1041" xml:id="m-52b0ee34-4e97-480f-9a74-96b07dc07d6a" />
+        <zone lrx="1940" lry="1102" ulx="1857" uly="1031" xml:id="m-5c39dce0-569d-44af-a043-3cf9593cc46e" />
+        <zone lrx="1909" lry="1029" ulx="1878" uly="980" xml:id="m-6813d181-4e6c-41fd-80ec-3121c761e39a" />
+        <zone lrx="2102" lry="1140" ulx="2012" uly="1036" xml:id="m-3d614481-61e7-4bc0-9ec7-7bb573a2c0d5" />
+        <zone lrx="2294" lry="1147" ulx="2265" uly="1128" xml:id="m-5d394a65-6f8c-4db8-b752-7461e793a8fc" />
+        <zone lrx="2490" lry="1143" ulx="2439" uly="1094" xml:id="m-eb49d0a9-7f48-4d8e-9dff-68072372ca5f" />
+        <zone lrx="2663" lry="1117" ulx="2604" uly="1062" xml:id="m-9a9bc142-7a87-4d50-bfd2-1d0b218203c9" />
+        <zone lrx="2849" lry="1155" ulx="2791" uly="1082" xml:id="m-e1be4370-8d5a-415f-9919-6856201d709e" />
+        <zone lrx="47" lry="67" ulx="0" uly="0" xml:id="m-6717cccd-df6a-4099-b0ac-fe4e98e27b0c" />
+        <zone lrx="3184" lry="1160" ulx="3114" uly="1074" xml:id="m-4b55ae26-bbf8-42f5-b153-cb2ec8eb3cde" />
+        <zone lrx="3340" lry="1135" ulx="3290" uly="1078" xml:id="m-fe1eabae-cea4-42a0-b3ed-4ee13cbfefd6" />
+        <zone lrx="3465" lry="1124" ulx="3399" uly="1056" xml:id="m-3feb31b6-f420-437b-b4c5-160abf03f0d6" />
+        <zone lrx="3537" lry="1138" ulx="3481" uly="1083" xml:id="m-dbcbe1f4-8386-4c35-8b4b-4e0ca9718c94" />
+        <zone lrx="3735" lry="1149" ulx="3702" uly="1134" xml:id="m-9ee2165a-fc9c-44dc-967b-12ddcc255b2a" />
+        <zone lrx="3932" lry="1176" ulx="3862" uly="1096" xml:id="m-8b008d8b-2a6d-45be-97c7-c86c6f19fad4" />
+        <zone lrx="4071" lry="1174" ulx="4015" uly="1120" xml:id="m-7b9af1ed-2984-4485-abc1-384ceb3360e0" />
+        <zone lrx="4192" lry="1190" ulx="4138" uly="1139" xml:id="m-82d82ff2-d3e3-452f-bc4a-6002c7703753" />
+        <zone lrx="4430" lry="1217" ulx="4328" uly="1143" xml:id="m-bb4dddfa-a7a5-44da-8f6a-9366f17f4e10" />
+        <zone lrx="4525" lry="1194" ulx="4477" uly="1151" xml:id="m-dafa3862-8e61-4340-a059-c8511c1ed542" />
+        <zone lrx="4820" lry="1206" ulx="4765" uly="1158" xml:id="m-e70b0d87-ca6e-4f5f-9095-dae49be87e1a" />
+        <zone lrx="1041" lry="1515" ulx="1010" uly="1503" xml:id="m-24448dff-7305-42ed-8ee1-578b7e1f24ef" />
+        <zone lrx="1217" lry="1512" ulx="1168" uly="1456" xml:id="m-02d4e306-d60f-4ef7-b2a7-c8c8a9e89843" />
+        <zone lrx="1439" lry="1484" ulx="1345" uly="1404" xml:id="m-0c996f96-ee8f-43ea-a71a-3339f0a4e201" />
+        <zone lrx="1635" lry="1501" ulx="1582" uly="1427" xml:id="m-f1bf437c-0213-423b-9185-e4bfef83779b" />
+        <zone lrx="1718" lry="1498" ulx="1668" uly="1438" xml:id="m-a2a0b148-cc02-4bce-962e-a749ca4df0a5" />
+        <zone lrx="1788" lry="1486" ulx="1757" uly="1472" xml:id="m-69a5a1fd-2375-4da0-b64d-4139b8a1c20f" />
+        <zone lrx="1858" lry="1483" ulx="1826" uly="1469" xml:id="m-f1b4d142-8669-42c8-bffe-212928e987ed" />
+        <zone lrx="870" lry="1846" ulx="842" uly="1834" xml:id="m-c33c5ae0-8ddd-4435-8e04-449169490c9c" />
+        <zone lrx="1043" lry="1847" ulx="990" uly="1794" xml:id="m-b5028978-a0f0-4333-b8a4-2da2af293feb" />
+        <zone lrx="1194" lry="1831" ulx="1130" uly="1767" xml:id="m-a78c7470-ae2e-416f-b7ea-f828541589da" />
+        <zone lrx="1376" lry="1812" ulx="1298" uly="1738" xml:id="m-63a0ea4d-ea0a-4327-ae96-ecbd8ab1175a" />
+        <zone lrx="1545" lry="1820" ulx="1468" uly="1743" xml:id="m-de7c4319-d07c-49e6-987c-b5b40b47b3fa" />
+        <zone lrx="1655" lry="1841" ulx="1567" uly="1774" xml:id="m-834b54e6-bc41-4c38-b9a1-b5e560eebfea" />
+        <zone lrx="1894" lry="1821" ulx="1838" uly="1770" xml:id="m-37dc23e0-e6b4-49fc-be02-347388038361" />
+        <zone lrx="2012" lry="1832" ulx="1964" uly="1772" xml:id="m-5f392d16-e817-4063-8ed7-e3170e96c861" />
+        <zone lrx="2116" lry="1828" ulx="2059" uly="1775" xml:id="m-ac970705-c399-49c4-8291-26022f89a6fe" />
+        <zone lrx="2214" lry="1828" ulx="2156" uly="1766" xml:id="m-f058a313-82a2-4959-8b5d-d4d485f07a53" />
+        <zone lrx="2400" lry="1821" ulx="2333" uly="1758" xml:id="m-12a94437-c55b-463e-ba55-325096d9584a" />
+        <zone lrx="99" lry="75" ulx="0" uly="0" xml:id="m-92f9f64f-2309-4ce6-b3c9-fc45c635bc46" />
+        <zone lrx="2726" lry="1833" ulx="2667" uly="1785" xml:id="m-447bcfa9-68fd-4ae7-b4a7-981526cb541e" />
+        <zone lrx="2872" lry="1846" ulx="2803" uly="1793" xml:id="m-a4486979-0bd8-4b41-9e00-d4dbe498f179" />
+        <zone lrx="3084" lry="1863" ulx="3001" uly="1793" xml:id="m-977de3fd-2422-4630-9776-f7b6e8ae8ed8" />
+        <zone lrx="3264" lry="1858" ulx="3185" uly="1786" xml:id="m-7d9e8af4-0805-4a03-8752-06dfa618c5bc" />
+        <zone lrx="3512" lry="1868" ulx="3481" uly="1854" xml:id="m-c9c88431-240d-4bee-9ac4-1309ea089f4b" />
+        <zone lrx="3694" lry="1874" ulx="3637" uly="1823" xml:id="m-413e24c6-b362-4de6-acfa-7a676d81027a" />
+        <zone lrx="3986" lry="1848" ulx="3906" uly="1784" xml:id="m-075b9d4c-7499-46f0-af9b-9fb3d6a2d807" />
+        <zone lrx="4224" lry="1831" ulx="4158" uly="1775" xml:id="m-518b8fca-121c-42ca-b890-240ed923e30a" />
+        <zone lrx="4386" lry="1867" ulx="4356" uly="1854" xml:id="m-a145eb6e-9eb5-49b3-bda1-791f7fb1584c" />
+        <zone lrx="4464" lry="1865" ulx="4434" uly="1852" xml:id="m-8100cbed-9d28-4a52-96f8-19b41fd0246f" />
+        <zone lrx="2586" lry="1840" ulx="2476" uly="1760" xml:id="m-de61a8c4-9f64-45f9-bdc0-6917ea33d926" />
+        <zone lrx="855" lry="2185" ulx="820" uly="2172" xml:id="m-11286367-ed45-48f5-ac20-7313250d5bbe" />
+        <zone lrx="880" lry="2163" ulx="820" uly="2113" xml:id="m-efff704e-22e1-4e91-8c6e-6045b5366a0f" />
+        <zone lrx="949" lry="2145" ulx="890" uly="2113" xml:id="m-09204b2d-704e-4521-a203-fb4c9ebec06e" />
+        <zone lrx="1112" lry="2176" ulx="1038" uly="2112" xml:id="m-49b0b943-7f64-43c4-bfc4-c9ed73fe7c1e" />
+        <zone lrx="1318" lry="2178" ulx="1228" uly="2094" xml:id="m-1adb7ed4-cf2b-4e20-a80c-facd9c86fac9" />
+        <zone lrx="1514" lry="2160" ulx="1449" uly="2106" xml:id="m-bc9851d3-2520-47da-ba40-4c27be7e3aad" />
+        <zone lrx="1657" lry="2153" ulx="1600" uly="2096" xml:id="m-53b1ce44-99aa-496c-b9cc-a99666c49fbc" />
+        <zone lrx="1817" lry="2143" ulx="1756" uly="2088" xml:id="m-c7a03cc6-9ff8-4cbe-8d8b-d8878113b3d3" />
+        <zone lrx="1945" lry="2169" ulx="1914" uly="2157" xml:id="m-bf444e47-f5a2-4bc7-a987-ebb6856ff7a1" />
+        <zone lrx="2136" lry="2180" ulx="2048" uly="2110" xml:id="m-a8a60928-c0aa-4e70-9076-4a3ba4fc4ddf" />
+        <zone lrx="2161" lry="2168" ulx="2129" uly="2154" xml:id="m-1c46dea2-02d1-4613-a627-2b9fd7a5e413" />
+        <zone lrx="2334" lry="2177" ulx="2247" uly="2094" xml:id="m-fc7c8c08-c963-4577-a6df-550c067c46c0" />
+        <zone lrx="2601" lry="2210" ulx="2551" uly="2149" xml:id="m-6e0fa605-a1cc-409f-a5cd-3e2e5a976219" />
+        <zone lrx="2724" lry="2216" ulx="2668" uly="2152" xml:id="m-a5fffc84-daae-4d54-a71f-a4925627f716" />
+        <zone lrx="2940" lry="2250" ulx="2844" uly="2160" xml:id="m-6eaa5750-f039-470f-9fcd-f84d4e484c96" />
+        <zone lrx="3029" lry="2210" ulx="3000" uly="2199" xml:id="m-882ca171-bb33-43e1-914e-e66f111dc13a" />
+        <zone lrx="3191" lry="2216" ulx="3126" uly="2165" xml:id="m-f5bfd025-f83f-48f7-8ae3-f7d5b1f59c76" />
+        <zone lrx="3274" lry="2222" ulx="3222" uly="2173" xml:id="m-d6b67f2a-08c3-4bdf-9b6b-e80abf86f77c" />
+        <zone lrx="3413" lry="2232" ulx="3361" uly="2181" xml:id="m-74415926-77f8-47c2-aa35-1a2b67cf9d57" />
+        <zone lrx="3572" lry="2254" ulx="3519" uly="2185" xml:id="m-b65350e4-ef75-4cde-a11f-6c836c98a9ec" />
+        <zone lrx="3831" lry="2249" ulx="3748" uly="2157" xml:id="m-a3cff28c-c1ff-49dc-8377-75c349ff19f4" />
+        <zone lrx="4088" lry="2233" ulx="3990" uly="2161" xml:id="m-4d281b12-196e-44fa-bba9-6ab55631f4a3" />
+        <zone lrx="4213" lry="2213" ulx="4156" uly="2160" xml:id="m-16c85d28-7610-49cf-b9ab-06c68d24e9ac" />
+        <zone lrx="4365" lry="2221" ulx="4309" uly="2152" xml:id="m-93a5be0b-3310-4219-9950-ce22d6f42249" />
+        <zone lrx="4610" lry="2219" ulx="4574" uly="2203" xml:id="m-99c53b1c-c4f0-454a-aba2-638690650707" />
+        <zone lrx="4704" lry="2213" ulx="4673" uly="2200" xml:id="m-897ec7ce-9ae3-4231-855c-ecab2b65c6e4" />
+        <zone lrx="406" lry="2384" ulx="390" uly="2381" xml:id="m-009adef8-c03e-41f7-beb2-06c82333ab97" />
+        <zone lrx="896" lry="2547" ulx="814" uly="2473" xml:id="m-d257a2c3-269c-4d50-bf2d-f38683c6f003" />
+        <zone lrx="963" lry="2474" ulx="901" uly="2424" xml:id="m-f1293d07-8167-4dec-9d60-2adf84a13a3f" />
+        <zone lrx="1008" lry="2543" ulx="974" uly="2529" xml:id="m-99cb91b9-af66-413e-af9f-a6d10003ed00" />
+        <zone lrx="1205" lry="2538" ulx="1174" uly="2525" xml:id="m-7f734f57-1a22-4bcc-af96-96bffaef0fc1" />
+        <zone lrx="1352" lry="2533" ulx="1220" uly="2461" xml:id="m-1e57cd60-9db9-4cdf-ba6b-551d35a14756" />
+        <zone lrx="1325" lry="2565" ulx="1294" uly="2552" xml:id="m-27cbf52b-becc-49d5-8100-5e552d5d17cb" />
+        <zone lrx="1436" lry="2579" ulx="1388" uly="2519" xml:id="m-a287d57f-6a90-420c-8c2b-4aa8ca38e898" />
+        <zone lrx="1522" lry="2563" ulx="1449" uly="2508" xml:id="m-db1ef820-cf45-4081-96b0-757e0ce8556f" />
+        <zone lrx="1655" lry="2556" ulx="1600" uly="2501" xml:id="m-409f7f4f-0f9d-4405-891b-48168e7f3a4f" />
+        <zone lrx="1740" lry="2554" ulx="1691" uly="2503" xml:id="m-6f22da2b-2718-4c6a-8a36-1576295e4c03" />
+        <zone lrx="1838" lry="2554" ulx="1809" uly="2542" xml:id="m-47e65eb0-a610-4bfa-a5df-599e3ea3b34d" />
+        <zone lrx="2006" lry="2566" ulx="1952" uly="2509" xml:id="m-98328316-602e-422a-908e-002439945b2d" />
+        <zone lrx="2220" lry="2565" ulx="2180" uly="2536" xml:id="m-05734490-4bc2-4955-91d1-1f22cde016e0" />
+        <zone lrx="2441" lry="2567" ulx="2389" uly="2505" xml:id="m-f3d4e72e-448a-4d1f-9588-ae3017262006" />
+        <zone lrx="2498" lry="2491" ulx="2461" uly="2453" xml:id="m-dd670495-45f1-4a59-be10-3ba292b799f9" />
+        <zone lrx="2621" lry="2559" ulx="2587" uly="2545" xml:id="m-fc571b76-f632-4a71-a74a-dcc7fd0162b5" />
+        <zone lrx="2812" lry="2570" ulx="2756" uly="2519" xml:id="m-45ad1f4c-e10f-423e-9dc4-41c4ba992a7e" />
+        <zone lrx="3021" lry="2555" ulx="2966" uly="2506" xml:id="m-204241dc-f0ef-47ec-8de8-dc0244881124" />
+        <zone lrx="3208" lry="2559" ulx="3112" uly="2497" xml:id="m-5e3543b9-9568-4016-8318-968ab054baf3" />
+        <zone lrx="3397" lry="2551" ulx="3350" uly="2505" xml:id="m-735249c1-3702-4ca9-86fc-62e424d040fe" />
+        <zone lrx="3532" lry="2564" ulx="3483" uly="2501" xml:id="m-0c6ba279-a5f1-40a5-a678-00e2c256e6f4" />
+        <zone lrx="3648" lry="2562" ulx="3617" uly="2549" xml:id="m-984e1dc9-ff8b-4940-823d-a7562528762b" />
+        <zone lrx="3776" lry="2567" ulx="3727" uly="2519" xml:id="m-16d99afc-99d4-4e85-8aa8-9d444f072375" />
+        <zone lrx="4125" lry="2594" ulx="4074" uly="2536" xml:id="m-5ca1ce10-9e50-44fe-807b-21a0b75ed865" />
+        <zone lrx="4163" lry="2520" ulx="4130" uly="2482" xml:id="m-7eec0af4-6528-44aa-ab33-30a099c9a064" />
+        <zone lrx="4270" lry="2599" ulx="4222" uly="2538" xml:id="m-6ec63cd1-1f7c-44f2-9922-730f7d5d06c8" />
+        <zone lrx="4320" lry="2522" ulx="4284" uly="2485" xml:id="m-e238dde0-4faf-42eb-87c6-808ad5319846" />
+        <zone lrx="4419" lry="2586" ulx="4358" uly="2534" xml:id="m-b3cb3e23-1bff-4659-bfdc-2f80b6b6c20b" />
+        <zone lrx="4490" lry="2594" ulx="4440" uly="2536" xml:id="m-c4aec932-5720-4557-8e0f-86830a5f68ad" />
+        <zone lrx="4544" lry="2534" ulx="4503" uly="2496" xml:id="m-d571f236-f442-4d27-8d21-850ffe5cc34a" />
+        <zone lrx="4562" lry="2567" ulx="4532" uly="2553" xml:id="m-ab1b8b74-abbb-4bfc-8976-d28530fd956c" />
+        <zone lrx="4619" lry="2566" ulx="4590" uly="2553" xml:id="m-e3362779-2953-420a-889e-09410c1124d7" />
+        <zone lrx="916" lry="2929" ulx="821" uly="2862" xml:id="m-dbfdd79e-46df-4511-9d8f-5e5c3105e201" />
+        <zone lrx="1048" lry="2940" ulx="938" uly="2837" xml:id="m-94133dc6-8e49-42fe-b164-b0b97edd4d4f" />
+        <zone lrx="1248" lry="2921" ulx="1150" uly="2849" xml:id="m-18988175-313d-4b4e-b63e-167ee71a8470" />
+        <zone lrx="1340" lry="2908" ulx="1281" uly="2855" xml:id="m-261196ff-31e6-4c99-a4dc-7e1b15cc275a" />
+        <zone lrx="1480" lry="2932" ulx="1422" uly="2863" xml:id="m-0847a295-1eb2-486f-97b7-ac8b93a747ba" />
+        <zone lrx="1528" lry="2864" ulx="1500" uly="2831" xml:id="m-424483fc-d1e0-4d78-a735-b955e38fc462" />
+        <zone lrx="1670" lry="2930" ulx="1607" uly="2878" xml:id="m-05bd820b-e2d8-447f-adf6-7c375988a15b" />
+        <zone lrx="1789" lry="2928" ulx="1720" uly="2865" xml:id="m-3d8e377d-516b-441e-ade8-8f14ece9bb0b" />
+        <zone lrx="1894" lry="2944" ulx="1862" uly="2927" xml:id="m-a47e3c41-dedf-4a78-8285-efe81ab62189" />
+        <zone lrx="2130" lry="2934" ulx="2062" uly="2879" xml:id="m-e0cf232c-73c2-4b0a-882c-4a8b2c2442ba" />
+        <zone lrx="2352" lry="2934" ulx="2288" uly="2881" xml:id="m-51810af2-ab7a-4538-96f3-4b2f1f9d1731" />
+        <zone lrx="2472" lry="2945" ulx="2407" uly="2891" xml:id="m-22bd4824-80db-4689-a6f6-ec83366a7352" />
+        <zone lrx="2702" lry="2954" ulx="2625" uly="2887" xml:id="m-39d26ea7-5866-45f5-939f-9c75aceddb1f" />
+        <zone lrx="2842" lry="2949" ulx="2756" uly="2880" xml:id="m-4ec641b2-a6b0-407d-ae0d-37ef3dc24c08" />
+        <zone lrx="2989" lry="2942" ulx="2958" uly="2929" xml:id="m-4fb6f819-17b2-404b-b92b-111a95f6ebaa" />
+        <zone lrx="3125" lry="2944" ulx="3064" uly="2890" xml:id="m-d17e04a0-6116-485a-bcac-aa1945a54f3b" />
+        <zone lrx="3301" lry="2938" ulx="3193" uly="2845" xml:id="m-84fd10e1-15b7-440c-8a89-edfec974fd23" />
+        <zone lrx="3384" lry="2945" ulx="3323" uly="2866" xml:id="m-f4639631-669b-4b53-91ca-b2062d0e7c6c" />
+        <zone lrx="3483" lry="2940" ulx="3424" uly="2880" xml:id="m-006fd01f-a37c-4b52-b759-23cc121ca9df" />
+        <zone lrx="3553" lry="2937" ulx="3517" uly="2922" xml:id="m-c7fdfb2a-bde7-4b34-8602-4a6bb3221c8d" />
+        <zone lrx="3620" lry="2931" ulx="3590" uly="2919" xml:id="m-96a3c593-c0a7-42d2-ba16-eb597bf0766d" />
+        <zone lrx="889" lry="3276" ulx="801" uly="3201" xml:id="m-924d2338-242f-4f69-a759-60fc3f5de843" />
+        <zone lrx="970" lry="3261" ulx="938" uly="3248" xml:id="m-e8636d90-4093-46a7-8008-287a2585af08" />
+        <zone lrx="1106" lry="3262" ulx="1043" uly="3204" xml:id="m-3ca6d95f-036e-4b57-adef-f3e8b60c4e00" />
+        <zone lrx="1328" lry="3258" ulx="1234" uly="3183" xml:id="m-1c608b4b-77e5-4445-8a26-940cb247fc53" />
+        <zone lrx="1429" lry="3232" ulx="1368" uly="3179" xml:id="m-8c5f94a7-d3f2-4178-8bd7-203655689b17" />
+        <zone lrx="1531" lry="3284" ulx="1482" uly="3223" xml:id="m-5e66a891-99e9-47d4-8f1d-02fb5bfce91b" />
+        <zone lrx="1581" lry="3222" ulx="1547" uly="3186" xml:id="m-4cf040bf-43dd-406a-9268-fb1883bcf1e7" />
+        <zone lrx="1664" lry="3281" ulx="1632" uly="3267" xml:id="m-1fe4e383-9d0b-4081-baef-56ca8dabdb7d" />
+        <zone lrx="1792" lry="3299" ulx="1741" uly="3240" xml:id="m-7e83a8b8-3284-46cd-961a-671b34532734" />
+        <zone lrx="1963" lry="3288" ulx="1870" uly="3220" xml:id="m-4b289a1c-e545-4784-bc80-7bee0170e12f" />
+        <zone lrx="2078" lry="3254" ulx="2010" uly="3196" xml:id="m-5333e26e-8004-41c2-93d1-f8b8d0a1241d" />
+        <zone lrx="2105" lry="3276" ulx="2072" uly="3262" xml:id="m-9e73ce7f-bc9d-45e2-977a-b3dc56e95d20" />
+        <zone lrx="2311" lry="3268" ulx="2244" uly="3207" xml:id="m-0e66ec01-7073-499a-9199-aa23e6d0118e" />
+        <zone lrx="2448" lry="3295" ulx="2395" uly="3239" xml:id="m-d7185971-dcc6-4c23-bf00-f28fe2a986ff" />
+        <zone lrx="2582" lry="3301" ulx="2550" uly="3286" xml:id="m-b135295a-a83a-47b4-be75-20a8cb5ca2f4" />
+        <zone lrx="2834" lry="3286" ulx="2776" uly="3233" xml:id="m-bd176641-73e6-4a63-a521-aa5fc3afe217" />
+        <zone lrx="2955" lry="3312" ulx="2899" uly="3263" xml:id="m-3e901256-76dd-48c0-b9fb-0f58f4732a42" />
+        <zone lrx="3081" lry="3318" ulx="3017" uly="3250" xml:id="m-b8b997f0-7622-47f5-9697-222fe2aee4b0" />
+        <zone lrx="3079" lry="3304" ulx="3061" uly="3289" xml:id="m-a251ed67-f5a1-40f4-b15b-ae524fbdc87b" />
+        <zone lrx="3106" lry="3321" ulx="3085" uly="3306" xml:id="m-7ecdc5e7-2dd1-413b-bbd9-097a6f780179" />
+        <zone lrx="3208" lry="3314" ulx="3149" uly="3255" xml:id="m-af894d3e-b802-4bff-b378-e6aba958fafc" />
+        <zone lrx="3363" lry="3318" ulx="3313" uly="3263" xml:id="m-398769e8-1c40-4b4a-8269-0a6502cc3ef3" />
+        <zone lrx="3469" lry="3300" ulx="3439" uly="3285" xml:id="m-a1acb7a7-4f5f-4ab3-bf4c-35b2e0dc6b3d" />
+        <zone lrx="3549" lry="3296" ulx="3517" uly="3280" xml:id="m-72908337-9806-4889-930a-afbc3c91d425" />
+        <zone lrx="839" lry="3625" ulx="812" uly="3605" xml:id="m-33b37d30-194e-472a-8cf5-68870bcc167e" />
+        <zone lrx="1005" lry="3606" ulx="951" uly="3556" xml:id="m-4e3f121d-acfb-4aed-a739-d2fe51adb20d" />
+        <zone lrx="1212" lry="3592" ulx="1155" uly="3538" xml:id="m-2f61f35e-b8e2-4565-900f-5628997fea9f" />
+        <zone lrx="1405" lry="3585" ulx="1320" uly="3515" xml:id="m-d4d37ab8-c96d-4155-8844-d833e576df3c" />
+        <zone lrx="1594" lry="3604" ulx="1516" uly="3531" xml:id="m-88734142-ecdc-4ecc-ba92-3e692d7bd300" />
+        <zone lrx="1683" lry="3606" ulx="1651" uly="3592" xml:id="m-61e68e9a-2ad7-465f-b215-c177be7e906b" />
+        <zone lrx="1786" lry="3610" ulx="1734" uly="3558" xml:id="m-c6ce94e9-79f4-4516-88a7-32508b292114" />
+        <zone lrx="1882" lry="3586" ulx="1831" uly="3540" xml:id="m-6473c632-3ddb-4241-8dc6-dd0bcaee928f" />
+        <zone lrx="2020" lry="3567" ulx="1967" uly="3520" xml:id="m-3c328ee0-766c-42b8-a60e-230f9c8e416b" />
+        <zone lrx="2244" lry="3497" ulx="2209" uly="3453" xml:id="m-b6fdbac2-a01d-4536-85e2-4859c5e63ce8" />
+        <zone lrx="2264" lry="3546" ulx="2210" uly="3496" xml:id="m-cf3f4959-4971-4bed-9d0e-04fa4ef540b6" />
+        <zone lrx="2397" lry="3651" ulx="2336" uly="3579" xml:id="m-06dbeb6a-8d58-4c7c-a2b3-f69635c04c04" />
+        <zone lrx="2556" lry="3632" ulx="2525" uly="3617" xml:id="m-24e1fe4c-ec6e-49b2-9a4a-87646fd9d95a" />
+        <zone lrx="2698" lry="3634" ulx="2664" uly="3621" xml:id="m-0c052ee8-ad1a-4603-9e8d-08edee8c83b5" />
+        <zone lrx="2900" lry="3651" ulx="2826" uly="3573" xml:id="m-983966c5-44d0-4ccf-8006-946130d28e92" />
+        <zone lrx="2911" lry="3611" ulx="2890" uly="3597" xml:id="m-0989ac43-ff1a-4484-b0bd-0ced0af4e70c" />
+        <zone lrx="2959" lry="3547" ulx="2900" uly="3507" xml:id="m-20eb2081-8d92-41c7-8fbf-bf81ff36f724" />
+        <zone lrx="3080" lry="3648" ulx="2987" uly="3577" xml:id="m-4c442c8f-67c9-4e8a-baf0-c63f79d41245" />
+        <zone lrx="3234" lry="3609" ulx="3171" uly="3558" xml:id="m-ed263e9b-71f2-449e-ba67-db2a8a215fa9" />
+        <zone lrx="3366" lry="3627" ulx="3313" uly="3580" xml:id="m-8ac349e7-16a4-474e-b969-4c41bc34788d" />
+        <zone lrx="3603" lry="3656" ulx="3548" uly="3607" xml:id="m-4d7d8df6-5446-4ad2-9e5f-bd9b403eecd8" />
+        <zone lrx="4073" lry="3682" ulx="3985" uly="3608" xml:id="m-bf1bedde-fd51-4271-9661-a039daf3ae13" />
+        <zone lrx="4257" lry="3674" ulx="4163" uly="3603" xml:id="m-a260b7da-dcf9-452b-a2a4-57d7ba4a264c" />
+        <zone lrx="4435" lry="3659" ulx="4371" uly="3604" xml:id="m-a85c3ffa-5908-47f0-9f05-9cb20695f899" />
+        <zone lrx="4540" lry="3692" ulx="4478" uly="3625" xml:id="m-3dc5ce63-cb4a-4b38-a26a-75820b026a9e" />
+        <zone lrx="3756" lry="3671" ulx="3726" uly="3658" xml:id="m-ef9448a3-cf6a-406a-8d3c-d552feb948da" />
+        <zone lrx="4654" lry="3678" ulx="4623" uly="3665" xml:id="m-61630ed8-397c-445e-83dc-b39586e81f69" />
+        <zone lrx="4777" lry="3684" ulx="4740" uly="3667" xml:id="m-71ce8165-5fff-4bcf-bb45-7815ab5be6ce" />
+        <zone lrx="937" lry="4320" ulx="851" uly="4252" xml:id="m-8ca69018-3bef-4d99-b280-cebaf4fa26b7" />
+        <zone lrx="1009" lry="4257" ulx="946" uly="4210" xml:id="m-24257ef1-e962-48ee-828b-732a64e9d6a2" />
+        <zone lrx="1025" lry="4317" ulx="996" uly="4304" xml:id="m-06d3b269-5943-40ac-9937-ad17b749e1d9" />
+        <zone lrx="1282" lry="4297" ulx="1216" uly="4244" xml:id="m-8c2c392c-6049-4ec8-a4c4-1810c2f4635c" />
+        <zone lrx="1313" lry="4227" ulx="1268" uly="4193" xml:id="m-c99b3181-08b2-4c22-b76f-0296cab6b027" />
+        <zone lrx="1380" lry="4228" ulx="1323" uly="4200" xml:id="m-37aeeb38-64ad-4224-bcb3-fc786eb85ca5" />
+        <zone lrx="1395" lry="4307" ulx="1336" uly="4257" xml:id="m-33b19026-7574-4bae-a0ac-209ab0993c66" />
+        <zone lrx="1494" lry="4321" ulx="1468" uly="4310" xml:id="m-f45864e1-e957-4780-977a-182ad511ecb8" />
+        <zone lrx="1690" lry="4338" ulx="1593" uly="4276" xml:id="m-148b3e52-88c5-4fc2-b071-91f05e180a26" />
+        <zone lrx="1842" lry="4345" ulx="1777" uly="4285" xml:id="m-2cc7c49b-5788-4f86-ba65-a157bf7a50b9" />
+        <zone lrx="1892" lry="4268" ulx="1859" uly="4233" xml:id="m-589ef650-5078-43eb-93a7-cbd3a3f491a4" />
+        <zone lrx="2031" lry="4324" ulx="1937" uly="4257" xml:id="m-4dd17e29-d9e5-40a0-a009-15b84c7924b1" />
+        <zone lrx="2123" lry="4331" ulx="2061" uly="4265" xml:id="m-8e08d632-7d13-4780-a788-26a96bda9ba7" />
+        <zone lrx="2176" lry="4342" ulx="2092" uly="4271" xml:id="m-dadb5542-85b8-4eac-99ee-f90d46cdfadc" />
+        <zone lrx="2163" lry="4355" ulx="2142" uly="4328" xml:id="m-446f2141-b2c4-4139-a1d3-0667b33078ba" />
+        <zone lrx="2190" lry="4312" ulx="2167" uly="4295" xml:id="m-6a74f8c6-be38-4eb4-88e3-03af3f10d0d2" />
+        <zone lrx="2245" lry="4355" ulx="2213" uly="4344" xml:id="m-ed0cc27b-0875-451a-99a8-ade7fc0874c1" />
+        <zone lrx="2418" lry="4365" ulx="2365" uly="4307" xml:id="m-575ba071-cfba-4d88-b825-ca598526a261" />
+        <zone lrx="2526" lry="4321" ulx="2437" uly="4253" xml:id="m-45039dda-dc85-41ea-9887-998672103369" />
+        <zone lrx="2557" lry="4338" ulx="2512" uly="4313" xml:id="m-5f0a2cf2-0b0b-4f48-b287-bb0f33abd2ab" />
+        <zone lrx="2721" lry="4342" ulx="2693" uly="4331" xml:id="m-7e1cc22a-0eeb-4e4c-8f75-a8b2d64c4358" />
+        <zone lrx="2891" lry="4347" ulx="2830" uly="4298" xml:id="m-856e3696-f536-4d22-b14c-36a74eada44e" />
+        <zone lrx="3018" lry="4356" ulx="2965" uly="4308" xml:id="m-55c7c792-d655-47ca-a50c-7210495411cd" />
+        <zone lrx="3114" lry="4355" ulx="3088" uly="4342" xml:id="m-85731bba-98e1-48a8-bde1-7888ee97460b" />
+        <zone lrx="3368" lry="4360" ulx="3319" uly="4326" xml:id="m-bcd32729-a223-4e03-8e9a-4d62aa22d885" />
+        <zone lrx="3532" lry="4352" ulx="3461" uly="4291" xml:id="m-2a931b53-6885-4a5f-a732-e1bc377bd1c9" />
+        <zone lrx="777" lry="4708" ulx="751" uly="4683" xml:id="m-3e4fc350-eaa8-42c7-adbd-c1214973a438" />
+        <zone lrx="783" lry="4662" ulx="759" uly="4650" xml:id="m-4a2a8e75-1d2f-4faa-9744-01028cd6cd62" />
+        <zone lrx="1081" lry="4662" ulx="1019" uly="4612" xml:id="m-58c595ae-4bd2-4c61-ac47-e48379c65ec0" />
+        <zone lrx="1183" lry="4648" ulx="1122" uly="4599" xml:id="m-feb8295f-7330-4f56-ba93-f2a28a2ab584" />
+        <zone lrx="1345" lry="4635" ulx="1280" uly="4578" xml:id="m-ee41c1a8-fa01-410c-97e2-eb455ee543b8" />
+        <zone lrx="1497" lry="4641" ulx="1435" uly="4571" xml:id="m-12dbc1fe-dc29-48b2-a14c-ae939680e650" />
+        <zone lrx="1731" lry="4687" ulx="1668" uly="4626" xml:id="m-4bd2471f-f02b-4856-9742-1b9e6e5b4e11" />
+        <zone lrx="1892" lry="4683" ulx="1827" uly="4621" xml:id="m-39128a2f-2f2f-412b-87d9-c2d8f5dafcfc" />
+        <zone lrx="1945" lry="4638" ulx="1908" uly="4604" xml:id="m-52b80f9d-2da0-41d2-a960-16e7a52894ef" />
+        <zone lrx="2008" lry="4669" ulx="1980" uly="4639" xml:id="m-17cb14b2-2451-4e6d-be91-27c94f020c69" />
+        <zone lrx="2081" lry="4696" ulx="2023" uly="4632" xml:id="m-ced05619-d5dd-4198-9f5f-cfefa4b1cdde" />
+        <zone lrx="2301" lry="4678" ulx="2238" uly="4626" xml:id="m-735f8fff-e411-4710-b8d4-829039a385fb" />
+        <zone lrx="2449" lry="4663" ulx="2385" uly="4612" xml:id="m-fc7a92ca-9b79-435a-848a-f7204ae266bc" />
+        <zone lrx="2627" lry="4703" ulx="2565" uly="4651" xml:id="m-2cfe45fd-0eff-4f20-911d-b91c3054b04f" />
+        <zone lrx="2711" lry="4702" ulx="2681" uly="4688" xml:id="m-a0843e60-78be-40ba-8231-de54af7c4550" />
+        <zone lrx="2903" lry="4707" ulx="2838" uly="4648" xml:id="m-82a726a7-cf25-4813-8649-f3375c0dd48b" />
+        <zone lrx="3076" lry="4710" ulx="3020" uly="4649" xml:id="m-b5db5f19-5ab1-4459-b891-3475b13b5a5d" />
+        <zone lrx="3164" lry="4694" ulx="3132" uly="4681" xml:id="m-981844b3-ec18-49a3-aad8-681bbe520219" />
+        <zone lrx="770" lry="5365" ulx="745" uly="5353" xml:id="m-a660807d-4c18-40b1-86b4-474aba172394" />
+        <zone lrx="1133" lry="5372" ulx="1054" uly="5318" xml:id="m-ab2b3f9b-e7e7-4110-88ef-09e14b955c31" />
+        <zone lrx="1337" lry="5379" ulx="1270" uly="5313" xml:id="m-93eefb66-be35-49ee-b224-07e67ef97835" />
+        <zone lrx="1424" lry="5331" ulx="1354" uly="5277" xml:id="m-c635b3eb-0269-46a7-9bf4-7baa11cd9cff" />
+        <zone lrx="1461" lry="5350" ulx="1441" uly="5335" xml:id="m-9303131f-fb0f-42f7-95b5-5cd939a0e54c" />
+        <zone lrx="1505" lry="5330" ulx="1465" uly="5288" xml:id="m-a8d8fe07-f5e9-443c-929b-758cedf2a2dd" />
+        <zone lrx="1577" lry="5286" ulx="1513" uly="5224" xml:id="m-a4a80e13-a370-4048-b54f-f4a9a35b03fc" />
+        <zone lrx="1644" lry="5282" ulx="1574" uly="5228" xml:id="m-4ba299b1-1c91-49a8-8a04-43ac9bae3f9e" />
+        <zone lrx="1637" lry="5394" ulx="1581" uly="5323" xml:id="m-3aee7cea-27ea-45d0-87fc-7e26668eec0d" />
+        <zone lrx="1894" lry="5364" ulx="1819" uly="5307" xml:id="m-ad763ec8-df11-4bbe-a9af-05ac388120a6" />
+        <zone lrx="2057" lry="5364" ulx="1965" uly="5281" xml:id="m-135adefd-2243-4dca-9666-b3275b3498f3" />
+        <zone lrx="2138" lry="5362" ulx="2084" uly="5291" xml:id="m-a461bb68-8696-4feb-b663-b91c19841db1" />
+        <zone lrx="2445" lry="5392" ulx="2344" uly="5311" xml:id="m-e26c3e7c-1a3d-4b09-82d3-33eb745c00a3" />
+        <zone lrx="2626" lry="5395" ulx="2559" uly="5328" xml:id="m-503d7027-3420-4ce6-bcc2-29ee4a7ac1f2" />
+        <zone lrx="2634" lry="5427" ulx="2606" uly="5400" xml:id="m-1f9aea25-0473-4ae6-96fe-ce437f25d8aa" />
+        <zone lrx="2700" lry="5398" ulx="2621" uly="5341" xml:id="m-e9ae958d-c5ae-4274-88fc-383ce81f0b70" />
+        <zone lrx="2790" lry="5397" ulx="2718" uly="5320" xml:id="m-2453e4bb-66ed-4fef-b188-6c0449caffb9" />
+        <zone lrx="2803" lry="5359" ulx="2778" uly="5344" xml:id="m-d05416b6-d0f6-455c-b5f4-ad1883093fd7" />
+        <zone lrx="2981" lry="5384" ulx="2923" uly="5335" xml:id="m-3bd423a3-cdb1-4b78-96a5-f71f3006f0ba" />
+        <zone lrx="3039" lry="5330" ulx="3010" uly="5274" xml:id="m-bc0bb728-860f-4687-803d-054b62f7f383" />
+        <zone lrx="3257" lry="5365" ulx="3171" uly="5296" xml:id="m-593a05d9-fda1-4e2a-a1e4-fa050704823a" />
+        <zone lrx="3445" lry="5394" ulx="3348" uly="5293" xml:id="m-3d7c3aca-252d-4efe-a9a1-ec75fe3b477a" />
+        <zone lrx="3608" lry="5388" ulx="3581" uly="5377" xml:id="m-57a48fb0-55a0-4370-8294-ca47e126f994" />
+        <zone lrx="3912" lry="5395" ulx="3856" uly="5347" xml:id="m-11402616-1907-47f2-b737-c13491b940b7" />
+        <zone lrx="4069" lry="5368" ulx="4007" uly="5312" xml:id="m-7c09ebea-a6f5-461b-b75e-8e79683df2fa" />
+        <zone lrx="4193" lry="5408" ulx="4114" uly="5338" xml:id="m-5b3cda10-583e-403f-a7dc-56390c891896" />
+        <zone lrx="4254" lry="5404" ulx="4184" uly="5330" xml:id="m-497b10a4-a718-4b2e-9424-8a7c25fab697" />
+        <zone lrx="4219" lry="5433" ulx="4197" uly="5407" xml:id="m-4ca7d7b6-fce4-4d6f-82fb-5eb58ae080fb" />
+        <zone lrx="4331" lry="5435" ulx="4285" uly="5376" xml:id="m-f96f831d-1e3e-4592-ba08-c092bddd1fbd" />
+        <zone lrx="4382" lry="5362" ulx="4341" uly="5329" xml:id="m-39c0fdb2-8bf1-4b9b-8abf-5207413be832" />
+        <zone lrx="4409" lry="5425" ulx="4346" uly="5374" xml:id="m-32381846-b975-4443-a94a-fabaebbfebda" />
+        <zone lrx="4797" lry="5438" ulx="4710" uly="5362" xml:id="m-9efbf4cb-7af6-4850-b5e4-a571949a60d0" />
+        <zone lrx="1408" lry="5665" ulx="1359" uly="5606" xml:id="m-6612786b-79a7-4b8e-ab67-6d5a5e481fe8" />
+        <zone lrx="1510" lry="5680" ulx="1407" uly="5589" xml:id="m-8aa7966f-4f1f-47fc-bc1b-45867b54cef6" />
+        <zone lrx="4474" lry="5484" ulx="4455" uly="5457" xml:id="m-32012707-bae0-41cd-aaa8-9b691554f08f" />
+        <zone lrx="4493" lry="5441" ulx="4464" uly="5428" xml:id="m-50652e25-33d9-4044-9d4c-058e6faef38a" />
+        <zone lrx="815" lry="5723" ulx="814" uly="5722" xml:id="m-45e1dcc4-5b4b-41cb-8dc9-5d4806018fd3" />
+        <zone lrx="919" lry="5703" ulx="829" uly="5630" xml:id="m-08b0a4c0-ec5f-4cfa-a6cd-c763870d65af" />
+        <zone lrx="905" lry="5694" ulx="890" uly="5677" xml:id="m-bf406a88-2aa9-42c0-a538-44f2998ce183" />
+        <zone lrx="927" lry="5715" ulx="908" uly="5702" xml:id="m-1fe89a7e-9d47-47f6-aef3-817fa37631e4" />
+        <zone lrx="1062" lry="5737" ulx="978" uly="5672" xml:id="m-60950f3d-381c-43b0-907a-35b2c10187a2" />
+        <zone lrx="1250" lry="5739" ulx="1180" uly="5671" xml:id="m-b198501e-f244-4add-a8de-4bf0de20c792" />
+        <zone lrx="1257" lry="5721" ulx="1240" uly="5705" xml:id="m-88ba702e-9b0e-42b0-a2a5-3a3d9eae4750" />
+        <zone lrx="1276" lry="5700" ulx="1261" uly="5686" xml:id="m-b5948afd-0287-45c8-b79e-ca6cf89496e9" />
+        <zone lrx="1347" lry="5681" ulx="1287" uly="5617" xml:id="m-0957d4fa-f9af-42db-8dbf-923bb78f1aa9" />
+        <zone lrx="1514" lry="5750" ulx="1444" uly="5702" xml:id="m-ee2b7d38-a752-45e8-acce-48ff41e84f8f" />
+        <zone lrx="1545" lry="5739" ulx="1521" uly="5702" xml:id="m-74b04ee9-233e-4420-b7e2-f60366cbe272" />
+        <zone lrx="1694" lry="5764" ulx="1608" uly="5690" xml:id="m-b8672f81-3cbd-43e5-8cb8-6157d3703c39" />
+        <zone lrx="1171" lry="6054" ulx="1152" uly="6035" xml:id="m-d50587ab-ca42-4b0d-929e-a8fdf4627651" />
+        <zone lrx="1213" lry="6022" ulx="1177" uly="5992" xml:id="m-aef1cb3c-a840-4b3d-a7ef-1051f7d1b6f9" />
+        <zone lrx="1285" lry="5983" ulx="1222" uly="5921" xml:id="m-558c7cb6-da04-48c5-8d61-9c2569566038" />
+        <zone lrx="1351" lry="6045" ulx="1323" uly="6030" xml:id="m-7e4e2b05-2630-438d-961b-67f5fe726bdd" />
+        <zone lrx="1629" lry="6055" ulx="1557" uly="6005" xml:id="m-aafdf3d9-ba34-4af8-b243-826ffe4eb2b6" />
+        <zone lrx="1801" lry="6067" ulx="1736" uly="5992" xml:id="m-4b56cf64-5c24-4758-9a79-768e0c2a62e7" />
+        <zone lrx="1880" lry="6018" ulx="1809" uly="5965" xml:id="m-eb183361-ce61-4d76-b1f7-3e1448b67744" />
+        <zone lrx="1915" lry="6029" ulx="1896" uly="6013" xml:id="m-8e3a90dd-0cdf-41bd-b35c-a7e483fa3d24" />
+        <zone lrx="1954" lry="6003" ulx="1919" uly="5972" xml:id="m-9249992d-4087-4809-90d2-da7142a21dec" />
+        <zone lrx="2016" lry="5968" ulx="1964" uly="5922" xml:id="m-e1b0da22-83d3-41e6-aebf-529ff5d1d9b6" />
+        <zone lrx="2065" lry="5993" ulx="1999" uly="5937" xml:id="m-5a439123-b717-470c-b595-58e2d703ccc7" />
+        <zone lrx="2252" lry="6027" ulx="2194" uly="5970" xml:id="m-c9b5365f-0d00-4ed8-9c97-79287152c0b0" />
+        <zone lrx="2483" lry="6025" ulx="2401" uly="5958" xml:id="m-282c9606-d213-4cf8-9fe0-878962b1a5cd" />
+        <zone lrx="2724" lry="6058" ulx="2661" uly="5996" xml:id="m-e68e6dc1-4681-4696-aecb-7273c90d891f" />
+        <zone lrx="2921" lry="6052" ulx="2853" uly="5988" xml:id="m-6770010b-bb2a-415c-aa41-e6aafa7175df" />
+        <zone lrx="2959" lry="6048" ulx="2900" uly="5980" xml:id="m-b49aed4b-7ae2-4ddf-8ac3-128557043a72" />
+        <zone lrx="2954" lry="6039" ulx="2937" uly="6024" xml:id="m-37384faa-edf8-4739-a1a2-7aa10ff798ec" />
+        <zone lrx="2965" lry="6059" ulx="2952" uly="6045" xml:id="m-1e8c44f1-b722-401f-95d8-0b628fb173a8" />
+        <zone lrx="3036" lry="6061" ulx="2967" uly="5996" xml:id="m-53a12b4b-fb92-438f-b136-edbf86b46208" />
+        <zone lrx="3096" lry="6103" ulx="3020" uly="6038" xml:id="m-59331171-049f-4152-8fcf-e21a102051fe" />
+        <zone lrx="3329" lry="6075" ulx="3272" uly="6025" xml:id="m-7bb2aa8b-059e-427e-a357-6061570b637e" />
+        <zone lrx="3525" lry="6071" ulx="3445" uly="6007" xml:id="m-d8ec41a5-cdaa-4c89-9762-cfdf43e363ce" />
+        <zone lrx="3755" lry="6076" ulx="3697" uly="6034" xml:id="m-c4edecb4-e51b-4047-8bc1-adb3a12b6ec3" />
+        <zone lrx="3904" lry="6085" ulx="3783" uly="6023" xml:id="m-26d38988-27fc-4d47-ac18-0bcf1e70e330" />
+        <zone lrx="3911" lry="6076" ulx="3894" uly="6059" xml:id="m-6202c98b-4837-4e74-9af5-9dcfc5fbc628" />
+        <zone lrx="3926" lry="6102" ulx="3906" uly="6086" xml:id="m-703f166b-007d-434c-b641-82f278194814" />
+        <zone lrx="4005" lry="6100" ulx="3941" uly="6036" xml:id="m-56716fb5-fcda-41d9-9459-d43d5c82e79a" />
+        <zone lrx="4343" lry="6107" ulx="4281" uly="6053" xml:id="m-05189c4e-354b-43e5-9a8e-73d3d2c65bbf" />
+        <zone lrx="4513" lry="6102" ulx="4465" uly="6075" xml:id="m-ddb3754e-e4ab-4a7c-ba3f-fa7676670986" />
+        <zone lrx="4600" lry="6093" ulx="4533" uly="6021" xml:id="m-8074a338-7f95-4fc0-9efc-dd41c05b4df9" />
+        <zone lrx="4584" lry="6083" ulx="4571" uly="6066" xml:id="m-ebecb15b-6a63-4b8f-811c-9818d78c318a" />
+        <zone lrx="4613" lry="6106" ulx="4591" uly="6091" xml:id="m-abab141c-c83b-4d72-80ac-3f2bbb2f7e09" />
+        <zone lrx="4733" lry="6095" ulx="4631" uly="6041" xml:id="m-24600189-6140-43d2-96a5-d23a32c441bc" />
+        <zone lrx="4719" lry="6026" ulx="4673" uly="5985" xml:id="m-b6941e56-8b5f-4080-995a-91e0a3a13834" />
+        <zone lrx="4796" lry="6042" ulx="4721" uly="5998" xml:id="m-3434135f-1119-469e-81f8-e77604228a60" />
+        <zone lrx="4746" lry="6088" ulx="4722" uly="6073" xml:id="m-5949864a-a3d8-4b02-aae0-15ec0ddd48dd" />
+        <zone lrx="4889" lry="6129" ulx="4794" uly="6048" xml:id="m-afda1181-0206-45a4-aeaf-f71bdb9914d5" />
+        <zone lrx="1368" lry="6384" ulx="1319" uly="6328" xml:id="m-d99246bd-8325-4a0b-b66a-71987a51c82f" />
+        <zone lrx="1437" lry="6378" ulx="1376" uly="6329" xml:id="m-397f1ec5-d130-4d27-a4d4-e899426466ad" />
+        <zone lrx="1919" lry="6235" ulx="1903" uly="6218" xml:id="m-bbc15d93-3639-4ed9-9c4d-22d770203c28" />
+        <zone lrx="2009" lry="6240" ulx="1997" uly="6220" xml:id="m-87c2b151-c758-46bd-a12d-f82a8499baf6" />
+        <zone lrx="2257" lry="6448" ulx="2180" uly="6381" xml:id="m-97121e8b-8dd1-415c-a4df-f7b8f160a0c7" />
+        <zone lrx="2270" lry="6378" ulx="2113" uly="6292" xml:id="m-1308d576-afb4-40fb-9f44-129a4114feb4" />
+        <zone lrx="2979" lry="6351" ulx="2863" uly="6311" xml:id="m-cf0d234c-efa7-4d85-8120-3f0ad8e54b82" />
+        <zone lrx="3973" lry="6195" ulx="3898" uly="6131" xml:id="m-9735ebf7-bf09-4d3b-a0a8-58e833db6fb4" />
+        <zone lrx="3061" lry="6371" ulx="3004" uly="6287" xml:id="m-1b935b59-19b5-4710-ab1c-31a72bc17800" />
+        <zone lrx="1228" lry="6371" ulx="1166" uly="6321" xml:id="m-2c8a6937-8e1f-4da7-a503-eb58cf459ff7" />
+        <zone lrx="1578" lry="6404" ulx="1557" uly="6377" xml:id="m-6dbb89e9-edf9-4981-bd49-4557594efeeb" />
+        <zone lrx="1607" lry="6402" ulx="1588" uly="6374" xml:id="m-74b4caef-4c45-4555-92e4-f89bcebfea9e" />
+        <zone lrx="1644" lry="6431" ulx="1590" uly="6371" xml:id="m-c1a10d23-a063-4313-bce3-463f31840385" />
+        <zone lrx="1873" lry="6394" ulx="1809" uly="6342" xml:id="m-2146c52d-b268-4dab-b6c9-5561707d838b" />
+        <zone lrx="2077" lry="6393" ulx="1979" uly="6321" xml:id="m-89fc5d8d-27cf-4e55-b4c5-b3bba8fafd91" />
+        <zone lrx="2075" lry="6376" ulx="2041" uly="6362" xml:id="m-97df2053-58a5-4c3d-a8e1-a1d76f35f9e5" />
+        <zone lrx="2081" lry="6399" ulx="2045" uly="6384" xml:id="m-bcf38fc5-ea75-4f50-9aa9-a6eff26e8513" />
+        <zone lrx="2636" lry="6448" ulx="2566" uly="6360" xml:id="m-0aa3c6c0-af05-43c7-8155-2bc371a09d52" />
+        <zone lrx="2556" lry="6422" ulx="2497" uly="6382" xml:id="m-e8ac711b-a954-4299-b86f-9d667addefcd" />
+        <zone lrx="2983" lry="6432" ulx="2882" uly="6356" xml:id="m-2ad255d3-e71e-4d93-bb4b-c990c0eb3ac8" />
+        <zone lrx="3157" lry="6427" ulx="3129" uly="6414" xml:id="m-c17f5e5d-4b7f-42a1-aea2-c31ae2345cc5" />
+        <zone lrx="3382" lry="6434" ulx="3319" uly="6383" xml:id="m-ee88d98f-92e4-449b-a31f-65ee2b1a606d" />
+        <zone lrx="3474" lry="6428" ulx="3393" uly="6353" xml:id="m-7a94489a-74a5-4e2b-87cc-7940ca792d58" />
+        <zone lrx="3434" lry="6461" ulx="3407" uly="6448" xml:id="m-42ef96d1-3e61-4b57-9e9a-302616a99669" />
+        <zone lrx="3535" lry="6468" ulx="3478" uly="6412" xml:id="m-9eda96c1-30c3-4fe3-868c-027cd7480b9b" />
+        <zone lrx="3632" lry="6470" ulx="3585" uly="6415" xml:id="m-23589fe2-6fbd-464a-8780-086c9ecedb7f" />
+        <zone lrx="3686" lry="6413" ulx="3653" uly="6381" xml:id="m-6d7c9c5f-f424-4b73-8460-db554aa0927d" />
+        <zone lrx="3725" lry="6456" ulx="3690" uly="6443" xml:id="m-f2903b23-9fec-4dd1-b51f-5f2d1864d4b5" />
+        <zone lrx="4016" lry="6476" ulx="3913" uly="6418" xml:id="m-d3b173aa-d52a-4507-8a8b-40f72321cd9e" />
+        <zone lrx="4009" lry="6404" ulx="3969" uly="6368" xml:id="m-a2a3b68b-4c2c-40bb-a8d8-b75f68925271" />
+        <zone lrx="4019" lry="6470" ulx="4002" uly="6454" xml:id="m-5bfa881c-5741-4154-a177-b91c62411a7b" />
+        <zone lrx="4201" lry="6476" ulx="4114" uly="6405" xml:id="m-e144e6a7-663c-4abd-abc6-2924bf117088" />
+        <zone lrx="4442" lry="6456" ulx="4353" uly="6390" xml:id="m-8f38aeec-34f3-4a25-acf7-1f96a74bedf8" />
+        <zone lrx="4439" lry="6434" ulx="4426" uly="6419" xml:id="m-68bca4dd-0083-45ac-beea-7fbc2821b0cd" />
+        <zone lrx="4454" lry="6460" ulx="4435" uly="6444" xml:id="m-c8157ab5-e1a7-4b9e-9ca0-dbc80545d24a" />
+        <zone lrx="4524" lry="6463" ulx="4466" uly="6404" xml:id="m-24a213b6-feb6-438d-bf1c-5f32c7dd7d89" />
+        <zone lrx="4614" lry="6489" ulx="4536" uly="6424" xml:id="m-78d781f2-5e2d-4e65-8442-08321ee83e75" />
+        <zone lrx="4808" lry="6483" ulx="4719" uly="6416" xml:id="m-57d29385-42bf-4e77-a1a8-496030812cab" />
+        <zone lrx="4815" lry="6420" ulx="4774" uly="6375" xml:id="m-2c081d3a-6c99-4712-9573-eebab5630bf7" />
+        <zone lrx="4848" lry="6468" ulx="4823" uly="6455" xml:id="m-646c764b-1200-4384-868a-6daa5784a28f" />
+      </surface>
+    </facsimile>
+    <body xml:id="m-0a2c5555-310f-4fec-b51f-ec5e689c65dc">
+      <mdiv xml:id="m-2ef3932d-af64-476e-9339-e6ec7d3d4fd7">
+        <pages xml:id="m-9c5e100f-d457-4df1-b1f4-1661da08b587">
+          <page xml:id="m-fb7e6ed9-a4c5-4d21-a0e1-6b64310b91e1">
+            <system xml:id="m-d7cb8b21-b8a2-414c-a016-5987b457c99e">
+              <staff xml:id="m-cc40f686-1a15-48ff-814c-1a3b5a3aeec9">
+                <layer xml:id="m-699497f6-1494-4c8b-bd23-d48c653bc398">
+                  <neume facs="m-f7e2dc59-1f9b-4daa-95f3-a49fb427eb9b" name="Virga Simple" xml:id="m-dbe0cdf3-8e3f-47ac-b65a-bd972ac761de" />
+                  <neume facs="m-60fc9cda-c524-4e9f-b4f4-cff47e8eac79" name="Tractulus Episema" xml:id="m-4b73eefe-f82b-405a-b452-539e16bb90fc" />
+                  <neume facs="m-12c10537-7205-4c0c-9537-99c8472515aa" name="Virga Simple" xml:id="m-dafbe3d2-3584-406d-89e7-b9dd106ad748" />
+                  <neume facs="m-0c0fa81d-0a1c-410d-aa6b-b0e703487e1c" name="Virga Simple" xml:id="m-e59bf959-1112-4fa9-b31c-7d93d21bfc42" />
+                  <neume facs="m-53b007d5-4f0a-42d2-9dfe-de40395d2f60" name="Tractulus Simple" xml:id="m-8834125d-fde2-411d-8511-852725fbb3d7" />
+                  <neume facs="m-183486db-efbb-4d31-a4ae-adb0ec06a59a" name="Virga Simple" xml:id="m-26dc06e9-a9a1-40eb-87c2-d9da997f6a8a" />
+                  <neume facs="m-b0eca1f1-e133-423d-a15b-de2278ee34a9" name="Torculus gedreht a (nicht kurrent)" xml:id="m-d4a375e2-cb66-4c63-a97b-f38d9be8af4b" />
+                  <neume facs="m-aefe2190-d512-4c8a-a5b4-75d9d2540036" name="Virga Simple" xml:id="m-2bb37806-8aec-4abb-b889-b476ad75b126" />
+                  <neume facs="m-211db137-d422-42a5-9524-b59bb83fbe29" name="Torculus Episema a" xml:id="m-d959b686-571a-49d9-90f0-ec236b661be0" />
+                  <neume facs="m-8209f21d-7deb-4dcb-b085-775468d41ccd" name="Letter C" xml:id="m-43b76943-22a1-4930-a4ae-f9e60a326f22" />
+                  <neume facs="m-f9ce0d6b-9f5c-41f9-b89c-806748cc14c0" name="Tractulus Simple" xml:id="m-efe5582d-a951-429c-8945-0c509fbb9e64" />
+                  <neume facs="m-f8b2ef0b-607b-4675-af3b-abd543df9106" name="Tractulus Simple" xml:id="m-976dbe7a-953e-4924-bd06-01880db21499" />
+                  <neume facs="m-8909e198-7e6f-471c-b4b9-fced522974e4" name="Tractulus Simple" xml:id="m-f0638b10-0831-4b99-aafb-e58109943d80" />
+                  <neume facs="m-ce1aa4cb-b883-479f-9585-fa3824c73543" name="Virga Simple" xml:id="m-6fa49f78-d498-450f-9ffd-33f30565e62a" />
+                  <neume facs="m-c6dd5fc4-6d49-4d43-be4f-d14017a534e7" name="Virga Simple" xml:id="m-3128ee9d-5084-49a4-aa29-70f199145d58" />
+                  <neume facs="m-b4fabde4-4e4c-4e87-aa33-a6f9bdd337dc" name="Virga Simple" xml:id="m-18262f1c-8500-42d9-9e89-72978edaa5b4" />
+                  <neume facs="m-52b0ee34-4e97-480f-9a74-96b07dc07d6a" name="Virga Simple" xml:id="m-b8b87c97-5f51-4457-9b21-a8a8574fc2e7" />
+                  <neume facs="m-5c39dce0-569d-44af-a043-3cf9593cc46e" name="Pes Rotundus Episema" xml:id="m-5aa181d1-f33f-4269-a76f-d2c7ec42c685" />
+                  <neume facs="m-6813d181-4e6c-41fd-80ec-3121c761e39a" name="Oriscus Simple" xml:id="m-6e6c34ab-3aae-4886-a2f5-c4189c2e439c" />
+                  <neume facs="m-3d614481-61e7-4bc0-9ec7-7bb573a2c0d5" name="Unnamed" xml:id="m-f3e25e58-0d4b-434b-91d3-7c7e2801e593" />
+                  <neume facs="m-5d394a65-6f8c-4db8-b752-7461e793a8fc" name="Tractulus Simple" xml:id="m-18b0a0d0-7b09-47bd-8ff9-e7c37561f025" />
+                  <neume facs="m-eb49d0a9-7f48-4d8e-9dff-68072372ca5f" name="Virga Simple" xml:id="m-9e1d342c-a063-4bb0-b1e8-8485cafbbe94" />
+                  <neume facs="m-9a9bc142-7a87-4d50-bfd2-1d0b218203c9" name="Virga Simple" xml:id="m-e7f31010-5883-4e47-87b4-b1810fa1f847" />
+                  <neume facs="m-e1be4370-8d5a-415f-9919-6856201d709e" name="Liquescent Virga aug. or Clivis dim., Cephalicus Simple" xml:id="m-6671636d-fc32-4790-985f-30e32aca800e" />
+                  <neume facs="m-6717cccd-df6a-4099-b0ac-fe4e98e27b0c" name="Virga Episema" xml:id="m-3942003f-08db-4129-8321-08bc891d10f1" />
+                  <neume facs="m-4b55ae26-bbf8-42f5-b153-cb2ec8eb3cde" name="Unnamed" xml:id="m-ac511070-b013-46ae-bbed-1324e7de8261" />
+                  <neume facs="m-fe1eabae-cea4-42a0-b3ed-4ee13cbfefd6" name="Virga Simple" xml:id="m-f3499ac0-ff4e-423e-99dd-aa6fd6b7054c" />
+                  <neume facs="m-3feb31b6-f420-437b-b4c5-160abf03f0d6" name="Torculus Episema a" xml:id="m-1298b8d2-6385-4702-a4d2-58564c0a8e24" />
+                  <neume facs="m-dbcbe1f4-8386-4c35-8b4b-4e0ca9718c94" name="Virga Simple" xml:id="m-4e359ea1-266c-4928-b589-035393221dd3" />
+                  <neume facs="m-9ee2165a-fc9c-44dc-967b-12ddcc255b2a" name="Tractulus Simple" xml:id="m-53c18545-4525-44f1-8f42-f122927fa85c" />
+                  <neume facs="m-8b008d8b-2a6d-45be-97c7-c86c6f19fad4" name="Unnamed" xml:id="m-307891f3-2519-4e9d-ab83-18b66eb0df02" />
+                  <neume facs="m-7b9af1ed-2984-4485-abc1-384ceb3360e0" name="Virga Simple" xml:id="m-940fb97a-14fe-4b4b-a261-c44b99743708" />
+                  <neume facs="m-82d82ff2-d3e3-452f-bc4a-6002c7703753" name="Virga Episema" xml:id="m-fad49383-8c0f-4e45-b418-5a0007a4fb2e" />
+                  <neume facs="m-bb4dddfa-a7a5-44da-8f6a-9366f17f4e10" name="Letter S" xml:id="m-a599996d-c6c0-40b8-bbfd-402e8e7baafa" />
+                  <neume facs="m-dafa3862-8e61-4340-a059-c8511c1ed542" name="Virga Simple" xml:id="m-9d544174-3d42-4d98-8b36-b3c9bbf916a3" />
+                  <neume facs="m-e70b0d87-ca6e-4f5f-9095-dae49be87e1a" name="Virga Simple" xml:id="m-f33aa351-10cc-4574-b753-58a0b62d2e68" />
+                  <neume facs="m-24448dff-7305-42ed-8ee1-578b7e1f24ef" name="Tractulus Simple" xml:id="m-cf3ad464-d054-4039-9063-70e217148f3b" />
+                  <neume facs="m-02d4e306-d60f-4ef7-b2a7-c8c8a9e89843" name="Virga Simple" xml:id="m-b87c25a5-e190-49d4-a63c-91ba503bfe1a" />
+                  <neume facs="m-0c996f96-ee8f-43ea-a71a-3339f0a4e201" name="Pes Quadratus Episema" xml:id="m-2aae954a-7864-4a20-a0e8-96a8a871a371" />
+                  <neume facs="m-f1bf437c-0213-423b-9185-e4bfef83779b" name="Liquescent Virga aug. or Clivis dim., Cephalicus Simple" xml:id="m-df0523a0-cc70-49c9-a629-8b1a64f351ce" />
+                  <neume facs="m-a2a0b148-cc02-4bce-962e-a749ca4df0a5" name="Virga Simple" xml:id="m-e32ea60b-8811-43e9-a974-aea4b240c1b7" />
+                  <neume facs="m-69a5a1fd-2375-4da0-b64d-4139b8a1c20f" name="Tractulus Simple" xml:id="m-acef26b0-4814-4e29-8c14-b460a9551a4c" />
+                  <neume facs="m-f1b4d142-8669-42c8-bffe-212928e987ed" name="Tractulus Simple" xml:id="m-b20ac817-487f-4118-9367-565a2ea5f0b3" />
+                  <neume facs="m-c33c5ae0-8ddd-4435-8e04-449169490c9c" name="Tractulus Simple" xml:id="m-9cad04d6-5efc-4bed-8d2f-9dd939bbc386" />
+                  <neume facs="m-b5028978-a0f0-4333-b8a4-2da2af293feb" name="Virga Simple" xml:id="m-a0d2bbb5-f969-49bc-93a6-9398daa38c22" />
+                  <neume facs="m-a78c7470-ae2e-416f-b7ea-f828541589da" name="Virga Episema" xml:id="m-7ba42274-d693-4115-86cc-e6a3df23c0bf" />
+                  <neume facs="m-63a0ea4d-ea0a-4327-ae96-ecbd8ab1175a" name="Virga strata (or with Punktum: Pressus maior) Simple" xml:id="m-37ffc204-8669-469f-a052-8a6c55303c6b" />
+                  <neume facs="m-de7c4319-d07c-49e6-987c-b5b40b47b3fa" name="Virga strata (or with Punktum: Pressus maior) Simple" xml:id="m-e700e08c-61ae-45e5-8de4-20f9a9912067" />
+                  <neume facs="m-834b54e6-bc41-4c38-b9a1-b5e560eebfea" name="Pes Rotundus" xml:id="m-e3d2ef67-c4ff-42fc-b7ba-db09f9ff97af" />
+                  <neume facs="m-37dc23e0-e6b4-49fc-be02-347388038361" name="Virga Simple" xml:id="m-b708e53e-c4fc-4af6-934f-66c625228527" />
+                  <neume facs="m-5f392d16-e817-4063-8ed7-e3170e96c861" name="Clivis Simple" xml:id="m-bb159ad1-cdc9-42c4-bebc-8062d917a183" />
+                  <neume facs="m-ac970705-c399-49c4-8291-26022f89a6fe" name="Virga Simple" xml:id="m-815279e3-439f-4683-9022-a8d80e1bacac" />
+                  <neume facs="m-f058a313-82a2-4959-8b5d-d4d485f07a53" name="Virga Simple" xml:id="m-511abc2d-efec-4509-b127-62e020ea9a93" />
+                  <neume facs="m-12a94437-c55b-463e-ba55-325096d9584a" name="Virga strata (or with Punktum: Pressus maior) Simple" xml:id="m-a30fafe7-154e-48a9-8eb9-73bd2da8f55a" />
+                  <neume facs="m-92f9f64f-2309-4ce6-b3c9-fc45c635bc46" name="Letter T" xml:id="m-0a7412b3-e911-43ce-9bff-c5ad6afca305" />
+                  <neume facs="m-447bcfa9-68fd-4ae7-b4a7-981526cb541e" name="Virga strata (or with Punktum: Pressus maior) Simple" xml:id="m-6b515ce3-78aa-4c8f-874b-b49417aea2c5" />
+                  <neume facs="m-a4486979-0bd8-4b41-9e00-d4dbe498f179" name="Virga Simple" xml:id="m-60065638-431a-450d-bcc9-0d4856840022" />
+                  <neume facs="m-977de3fd-2422-4630-9776-f7b6e8ae8ed8" name="Clivis Episema c" xml:id="m-444f927f-ec58-47a5-8057-d25348bdf69f" />
+                  <neume facs="m-7d9e8af4-0805-4a03-8752-06dfa618c5bc" name="Torculus gedreht a (nicht kurrent)" xml:id="m-6d5ae54a-c98c-4202-83a1-210d6a9d13c2" />
+                  <neume facs="m-c9c88431-240d-4bee-9ac4-1309ea089f4b" name="Tractulus Simple" xml:id="m-1df59023-a5f2-4678-b51d-f01affd741a2" />
+                  <neume facs="m-413e24c6-b362-4de6-acfa-7a676d81027a" name="Virga Simple" xml:id="m-071ed417-49a4-4c36-8962-aea66a70a706" />
+                  <neume facs="m-075b9d4c-7499-46f0-af9b-9fb3d6a2d807" name="Virga Simple" xml:id="m-a19e6677-bfcc-4a5f-a4e8-19407306a788" />
+                  <neume facs="m-518b8fca-121c-42ca-b890-240ed923e30a" name="Virga Simple" xml:id="m-d69cc0b6-db98-4962-839a-3768905099b6" />
+                  <neume facs="m-a145eb6e-9eb5-49b3-bda1-791f7fb1584c" name="Tractulus Simple" xml:id="m-7f396dd2-fa42-42b1-84d6-0cdc0abfc2e7" />
+                  <neume facs="m-8100cbed-9d28-4a52-96f8-19b41fd0246f" name="Tractulus Simple" xml:id="m-fc60c56b-829f-4a70-9f5f-588b8274b858" />
+                  <neume facs="m-de61a8c4-9f64-45f9-bdc0-6917ea33d926" name="Unnamed" xml:id="m-c6e4f11e-8cab-4f0b-a0dd-e6f249af860a" />
+                  <neume facs="m-11286367-ed45-48f5-ac20-7313250d5bbe" name="Tractulus Simple" xml:id="m-fd6fdc62-2548-4420-98b5-4456f327e469" />
+                  <neume facs="m-efff704e-22e1-4e91-8c6e-6045b5366a0f" name="Oriscus Simple" xml:id="m-618ebcd4-4907-4146-8a23-09690d8fed1a" />
+                  <neume facs="m-09204b2d-704e-4521-a203-fb4c9ebec06e" name="Letter M" xml:id="m-1438bcf4-1813-4ccd-bfb8-b63544984019" />
+                  <neume facs="m-49b0b943-7f64-43c4-bfc4-c9ed73fe7c1e" name="Virga Simple" xml:id="m-3a609b66-ac49-4f00-a3b5-0acd6ac13ba6" />
+                  <neume facs="m-1adb7ed4-cf2b-4e20-a80c-facd9c86fac9" name="Liquescent Punctum aug. or Pes dim., Epiphonus Simple" xml:id="m-eb9a21c4-fdcb-4b5c-87d4-f35b152729b5" />
+                  <neume facs="m-bc9851d3-2520-47da-ba40-4c27be7e3aad" name="Virga Simple" xml:id="m-6d80710d-bb64-4c91-91d3-d3c4d98c64a4" />
+                  <neume facs="m-53b1ce44-99aa-496c-b9cc-a99666c49fbc" name="Virga Simple" xml:id="m-92f0bb62-3429-4084-8809-fc7517109595" />
+                  <neume facs="m-c7a03cc6-9ff8-4cbe-8d8b-d8878113b3d3" name="Virga Simple" xml:id="m-9298461f-7ca1-4af6-9868-ee9d73facd35" />
+                  <neume facs="m-bf444e47-f5a2-4bc7-a987-ebb6856ff7a1" name="Tractulus Simple" xml:id="m-42ae1009-99c2-46e8-b5bd-434ca2f59f78" />
+                  <neume facs="m-a8a60928-c0aa-4e70-9076-4a3ba4fc4ddf" name="Pes Quadratus" xml:id="m-d6baebd5-758c-49c5-9c60-50a07611f1d5" />
+                  <neume facs="m-1c46dea2-02d1-4613-a627-2b9fd7a5e413" name="Tractulus Simple" xml:id="m-73ca085e-1b19-4f62-ae29-b83de9236a03" />
+                  <neume facs="m-fc7c8c08-c963-4577-a6df-550c067c46c0" name="Liquescent Pes aug. Rotundus" xml:id="m-95b7b78c-2661-44ad-b341-550ae3d2bc0c" />
+                  <neume facs="m-6e0fa605-a1cc-409f-a5cd-3e2e5a976219" name="Clivis Simple" xml:id="m-23d7ba43-42da-4aad-a789-9888edf9b7b7" />
+                  <neume facs="m-a5fffc84-daae-4d54-a71f-a4925627f716" name="Virga Episema" xml:id="m-39a1d981-31d1-4c76-b95a-da2421569cca" />
+                  <neume facs="m-6eaa5750-f039-470f-9fcd-f84d4e484c96" name="Letter X" xml:id="m-eb756b1a-8d37-4ad3-88b6-7e61d9c19fd1" />
+                  <neume facs="m-882ca171-bb33-43e1-914e-e66f111dc13a" name="Tractulus Simple" xml:id="m-98bc02eb-1b38-444e-b7d8-7f016c9498fe" />
+                  <neume facs="m-f5bfd025-f83f-48f7-8ae3-f7d5b1f59c76" name="Virga Simple" xml:id="m-eb82bb94-6711-4248-b736-d980e0a6d070" />
+                  <neume facs="m-d6b67f2a-08c3-4bdf-9b6b-e80abf86f77c" name="Virga Simple" xml:id="m-b601fe02-a894-4bc6-a7cd-f3e53aa476e5" />
+                  <neume facs="m-74415926-77f8-47c2-aa35-1a2b67cf9d57" name="Virga Simple" xml:id="m-a0f165d8-279c-41b7-9acd-9f0a1e417963" />
+                  <neume facs="m-b65350e4-ef75-4cde-a11f-6c836c98a9ec" name="Liquescent Virga aug. or Clivis dim., Cephalicus Simple" xml:id="m-28bd8102-8c64-464b-8757-8a6fd8f1e63a" />
+                  <neume facs="m-a3cff28c-c1ff-49dc-8377-75c349ff19f4" name="Unnamed" xml:id="m-c05252f1-a2cc-4ae0-a4da-d3c2aeb31408" />
+                  <neume facs="m-4d281b12-196e-44fa-bba9-6ab55631f4a3" name="Pes Quadratus Episema" xml:id="m-a74f106f-915d-4647-ad5d-215ef886c511" />
+                  <neume facs="m-16c85d28-7610-49cf-b9ab-06c68d24e9ac" name="Virga Simple" xml:id="m-67c959ef-0408-45a7-8554-6ec849839874" />
+                  <neume facs="m-93a5be0b-3310-4219-9950-ce22d6f42249" name="Liquescent Virga aug. or Clivis dim., Cephalicus Simple" xml:id="m-6e526f24-887c-44a2-acd0-af03258db8a0" />
+                  <neume facs="m-99c53b1c-c4f0-454a-aba2-638690650707" name="Tractulus Simple" xml:id="m-c2750f37-cd49-49f3-9b39-aa5e5ea0461a" />
+                  <neume facs="m-897ec7ce-9ae3-4231-855c-ecab2b65c6e4" name="Tractulus Simple" xml:id="m-f73f40b5-84e7-4e1e-9bdc-a648092b6eb1" />
+                  <neume facs="m-009adef8-c03e-41f7-beb2-06c82333ab97" name="Punctum Simple" xml:id="m-7da8fa1e-efbc-43e4-ab04-e24a69477d4b" />
+                  <neume facs="m-d257a2c3-269c-4d50-bf2d-f38683c6f003" name="Pes Quadratus" xml:id="m-81199fd7-f473-44b1-a636-59a0a786f410" />
+                  <neume facs="m-f1293d07-8167-4dec-9d60-2adf84a13a3f" name="Virga Simple" xml:id="m-be0031d3-a652-4305-97ca-3923036517b7" />
+                  <neume facs="m-99cb91b9-af66-413e-af9f-a6d10003ed00" name="Tractulus Simple" xml:id="m-b485bf5c-e323-42e9-8dfb-f52aae472a22" />
+                  <neume facs="m-7f734f57-1a22-4bcc-af96-96bffaef0fc1" name="Tractulus Simple" xml:id="m-92b0270a-ee02-480c-9145-e65868855d41" />
+                  <neume facs="m-1e57cd60-9db9-4cdf-ba6b-551d35a14756" name="Quilismatorculus Simple three" xml:id="m-9e7c2397-4580-4137-b3e6-8caf37e9f521" />
+                  <neume facs="m-27cbf52b-becc-49d5-8100-5e552d5d17cb" name="Tractulus Simple" xml:id="m-03b1ba1b-34bb-46d8-81dc-7d98a4f2ca66" />
+                  <neume facs="m-a287d57f-6a90-420c-8c2b-4aa8ca38e898" name="Clivis Simple" xml:id="m-c78c76c0-c7a0-43ff-919d-a4107de7396d" />
+                  <neume facs="m-db1ef820-cf45-4081-96b0-757e0ce8556f" name="Liquescent Clivis aug., Ancus Simple a" xml:id="m-3153aef6-0397-4dbe-9804-f1b0ace3995a" />
+                  <neume facs="m-409f7f4f-0f9d-4405-891b-48168e7f3a4f" name="Virga Simple" xml:id="m-491c01d2-9d5f-45c0-a1f4-e01184b99dcf" />
+                  <neume facs="m-6f22da2b-2718-4c6a-8a36-1576295e4c03" name="Virga Episema" xml:id="m-cd0aea2a-6ba1-41a7-8b62-3cbb9ee1b76b" />
+                  <neume facs="m-47e65eb0-a610-4bfa-a5df-599e3ea3b34d" name="Tractulus Simple" xml:id="m-5530b5c9-19ae-4c28-acca-189bb05123e3" />
+                  <neume facs="m-98328316-602e-422a-908e-002439945b2d" name="Virga Simple" xml:id="m-61da9e34-2393-4304-8c1f-28bb9bf5dff2" />
+                  <neume facs="m-05734490-4bc2-4955-91d1-1f22cde016e0" name="Liquescent Punctum aug. or Pes dim., Epiphonus Simple" xml:id="m-a687cd80-fd52-4142-bcf6-624b13bdc645" />
+                  <neume facs="m-f3d4e72e-448a-4d1f-9588-ae3017262006" name="Clivis Episema c" xml:id="m-d3b6be37-6833-413a-b65a-78ff4c990747" />
+                  <neume facs="m-dd670495-45f1-4a59-be10-3ba292b799f9" name="Letter C" xml:id="m-915554f2-c773-40be-8599-66e144c7c2fd" />
+                  <neume facs="m-fc571b76-f632-4a71-a74a-dcc7fd0162b5" name="Tractulus Simple" xml:id="m-d6fa1ef5-275b-43e7-8c44-4b86fda1bbfe" />
+                  <neume facs="m-45ad1f4c-e10f-423e-9dc4-41c4ba992a7e" name="Virga Simple" xml:id="m-3045a4f0-4bcb-4f9f-b9c8-61c1e0b953a5" />
+                  <neume facs="m-204241dc-f0ef-47ec-8de8-dc0244881124" name="Virga Simple" xml:id="m-ad7bd3f5-13b5-460a-95c0-bbd334cdb1b8" />
+                  <neume facs="m-5e3543b9-9568-4016-8318-968ab054baf3" name="Liquescent Pes aug. Rotundus" xml:id="m-7408b6d4-b585-4dcf-879a-2dd8dd783d68" />
+                  <neume facs="m-735249c1-3702-4ca9-86fc-62e424d040fe" name="Virga Simple" xml:id="m-e8ef9ede-3b59-4119-bc9c-936ebeb00e9a" />
+                  <neume facs="m-0c6ba279-a5f1-40a5-a678-00e2c256e6f4" name="Clivis Simple" xml:id="m-cb167692-4fb8-4f3f-8f1f-e9295a1b7ea7" />
+                  <neume facs="m-984e1dc9-ff8b-4940-823d-a7562528762b" name="Tractulus Simple" xml:id="m-33f815d6-3db0-4e16-926c-c243cf0cc668" />
+                  <neume facs="m-16d99afc-99d4-4e85-8aa8-9d444f072375" name="Virga Episema" xml:id="m-031b76f4-2765-49ed-b672-af4c878291f8" />
+                  <neume facs="m-5ca1ce10-9e50-44fe-807b-21a0b75ed865" name="Clivis Simple" xml:id="m-2035e4de-f0be-41ca-8543-782f1b706ac2" />
+                  <neume facs="m-7eec0af4-6528-44aa-ab33-30a099c9a064" name="Letter C" xml:id="m-c15ddad3-78ce-41c8-8d17-7611903d3f06" />
+                  <neume facs="m-6ec63cd1-1f7c-44f2-9922-730f7d5d06c8" name="Clivis Simple" xml:id="m-d714bcec-d9b1-4f18-ba53-516c10756239" />
+                  <neume facs="m-e238dde0-4faf-42eb-87c6-808ad5319846" name="Letter C" xml:id="m-f0558f83-7ae7-4a1c-87b9-82c6962b825a" />
+                  <neume facs="m-b3cb3e23-1bff-4659-bfdc-2f80b6b6c20b" name="Virga Simple" xml:id="m-d1870807-2601-4f8b-b890-8f6066c28d5b" />
+                  <neume facs="m-c4aec932-5720-4557-8e0f-86830a5f68ad" name="Clivis Simple" xml:id="m-58f9c3b3-59e6-4ede-8d4e-1d66291edfb4" />
+                  <neume facs="m-d571f236-f442-4d27-8d21-850ffe5cc34a" name="Letter A" xml:id="m-be28c898-1ed0-43dc-a025-fc5fb782296f" />
+                  <neume facs="m-ab1b8b74-abbb-4bfc-8976-d28530fd956c" name="Tractulus Simple" xml:id="m-abf4532a-a054-477d-8e89-9b82a8235a10" />
+                  <neume facs="m-e3362779-2953-420a-889e-09410c1124d7" name="Tractulus Simple" xml:id="m-8b1aa5be-b6e7-4412-bd38-96481f865fcc" />
+                  <neume facs="m-dbfdd79e-46df-4511-9d8f-5e5c3105e201" name="Pes Quadratus" xml:id="m-cfdaf27b-7f18-4998-8bac-7eda261a6ae2" />
+                  <neume facs="m-94133dc6-8e49-42fe-b164-b0b97edd4d4f" name="Liquescent Porrectus aug. Simple" xml:id="m-c5a9d535-0abd-4c8f-9f86-40591e5575ae" />
+                  <neume facs="m-18988175-313d-4b4e-b63e-167ee71a8470" name="Porrectus Simple" xml:id="m-dafcf4e5-6ccf-4b3b-bcc3-540eb4a1ad8b" />
+                  <neume facs="m-261196ff-31e6-4c99-a4dc-7e1b15cc275a" name="Virga Simple" xml:id="m-25563a13-5c96-4395-8949-31c0590a7c42" />
+                  <neume facs="m-0847a295-1eb2-486f-97b7-ac8b93a747ba" name="Clivis Episema c" xml:id="m-04ca84ab-487a-463a-a9d1-647869817b18" />
+                  <neume facs="m-424483fc-d1e0-4d78-a735-b955e38fc462" name="Letter C" xml:id="m-46cbc56c-cbe4-4d7f-be7c-a99fc4385455" />
+                  <neume facs="m-05bd820b-e2d8-447f-adf6-7c375988a15b" name="Virga Simple" xml:id="m-21fb2d7d-4e12-4398-b462-c151b6a0e87e" />
+                  <neume facs="m-3d8e377d-516b-441e-ade8-8f14ece9bb0b" name="Virga Episema" xml:id="m-59e7064f-4330-4fec-a0bc-b291f54e7ceb" />
+                  <neume facs="m-a47e3c41-dedf-4a78-8285-efe81ab62189" name="Tractulus Episema" xml:id="m-c309c99a-ab0a-425d-b3db-b74f63ad399a" />
+                  <neume facs="m-e0cf232c-73c2-4b0a-882c-4a8b2c2442ba" name="Virga Simple" xml:id="m-f70e852e-9353-47b2-97dd-41c17d139a99" />
+                  <neume facs="m-51810af2-ab7a-4538-96f3-4b2f1f9d1731" name="Virga Simple" xml:id="m-144a7a5a-e185-4a94-8f16-c6bbff7fa631" />
+                  <neume facs="m-22bd4824-80db-4689-a6f6-ec83366a7352" name="Virga Simple" xml:id="m-c34da541-6ad1-4576-a805-0d140b67e9ce" />
+                  <neume facs="m-39d26ea7-5866-45f5-939f-9c75aceddb1f" name="Clivis Episema c" xml:id="m-e510d961-cbec-4394-aff3-007f7d828146" />
+                  <neume facs="m-4ec641b2-a6b0-407d-ae0d-37ef3dc24c08" name="Clivis Episema c" xml:id="m-5cddea4e-1b38-4d67-8b90-bb4910f30771" />
+                  <neume facs="m-4fb6f819-17b2-404b-b92b-111a95f6ebaa" name="Tractulus Simple" xml:id="m-8b0b9048-a9ac-4a5f-97b0-e659a0068d4d" />
+                  <neume facs="m-d17e04a0-6116-485a-bcac-aa1945a54f3b" name="Virga Simple" xml:id="m-e1832766-d161-4f68-a47c-a42758c45fca" />
+                  <neume facs="m-84fd10e1-15b7-440c-8a89-edfec974fd23" name="Torculus Simple" xml:id="m-4da644f8-8a89-407a-878b-620218a9cdd7" />
+                  <neume facs="m-f4639631-669b-4b53-91ca-b2062d0e7c6c" name="Liquescent Virga aug. or Clivis dim., Cephalicus Simple" xml:id="m-827fb687-f68e-41c8-af32-ef6e4cfb26a5" />
+                  <neume facs="m-006fd01f-a37c-4b52-b759-23cc121ca9df" name="Virga Simple" xml:id="m-cd61d714-54f3-4e72-8b79-065d9deb74d5" />
+                  <neume facs="m-c7fdfb2a-bde7-4b34-8602-4a6bb3221c8d" name="Tractulus Simple" xml:id="m-1f509f1a-b0a1-4edd-aa95-b8313342052b" />
+                  <neume facs="m-96a3c593-c0a7-42d2-ba16-eb597bf0766d" name="Tractulus Simple" xml:id="m-936cbe7e-3e07-40c2-9542-03e0bba2c3d8" />
+                  <neume facs="m-924d2338-242f-4f69-a759-60fc3f5de843" name="Torculus Episema c" xml:id="m-fe054344-7fdd-442b-ac29-8d5c09e73f16" />
+                  <neume facs="m-e8636d90-4093-46a7-8008-287a2585af08" name="Tractulus Simple" xml:id="m-1c228762-12b9-4909-ab01-ce2874f753bf" />
+                  <neume facs="m-3ca6d95f-036e-4b57-adef-f3e8b60c4e00" name="Virga Simple" xml:id="m-90532392-857e-4039-896e-10bc47a95554" />
+                  <neume facs="m-1c608b4b-77e5-4445-8a26-940cb247fc53" name="Pes Quadratus Episema" xml:id="m-296e03e5-ae4d-408a-bcde-dafd1379d1c8" />
+                  <neume facs="m-8c5f94a7-d3f2-4178-8bd7-203655689b17" name="Virga Episema" xml:id="m-c6d39606-bc06-490a-922a-fc175c4fb7d3" />
+                  <neume facs="m-5e66a891-99e9-47d4-8f1d-02fb5bfce91b" name="Clivis Simple" xml:id="m-5c0474d8-577d-4fda-96ca-9e9246331bd2" />
+                  <neume facs="m-4cf040bf-43dd-406a-9268-fb1883bcf1e7" name="Letter C" xml:id="m-6cd85054-2f3c-45c3-a057-40db4739e888" />
+                  <neume facs="m-1fe4e383-9d0b-4081-baef-56ca8dabdb7d" name="Tractulus Simple" xml:id="m-adc1812c-332b-4468-a46e-d3c8ecf77fb3" />
+                  <neume facs="m-7e83a8b8-3284-46cd-961a-671b34532734" name="Clivis Simple" xml:id="m-f179759a-e7f9-4c19-b2dd-b6cc4b96d98a" />
+                  <neume facs="m-4b289a1c-e545-4784-bc80-7bee0170e12f" name="Torculus Episema c" xml:id="m-fe9e71ab-95b9-4ee6-9281-44f4ec7cf1f2" />
+                  <neume facs="m-5333e26e-8004-41c2-93d1-f8b8d0a1241d" name="Virga Episema" xml:id="m-77f98e22-95bf-40d5-9d0d-4542259a0641" />
+                  <neume facs="m-9e73ce7f-bc9d-45e2-977a-b3dc56e95d20" name="Tractulus Simple" xml:id="m-6eceed26-8aee-4363-8fa3-bff1f2cc85da" />
+                  <neume facs="m-0e66ec01-7073-499a-9199-aa23e6d0118e" name="Pes Rotundus" xml:id="m-feec94db-1e35-4aef-a6ba-c8c4fde886ea" />
+                  <neume facs="m-d7185971-dcc6-4c23-bf00-f28fe2a986ff" name="Virga Simple" xml:id="m-7aed2415-abdd-426a-8e62-cf13b0887b65" />
+                  <neume facs="m-b135295a-a83a-47b4-be75-20a8cb5ca2f4" name="Tractulus Simple" xml:id="m-54ea927c-a5e6-4893-9558-ce75098ed05b" />
+                  <neume facs="m-bd176641-73e6-4a63-a521-aa5fc3afe217" name="Virga Episema" xml:id="m-973536ec-aea1-4685-a419-d8a560320c52" />
+                  <neume facs="m-3e901256-76dd-48c0-b9fb-0f58f4732a42" name="Letter S" xml:id="m-305780de-23c9-4470-b818-a3d9ecf0a71a" />
+                  <neume facs="m-b8b997f0-7622-47f5-9697-222fe2aee4b0" name="Virga Episema" xml:id="m-210999f8-1486-4f28-bf07-313fcb018b15" />
+                  <neume facs="m-a251ed67-f5a1-40f4-b15b-ae524fbdc87b" name="Punctum Simple" xml:id="m-487c3385-2ca7-496b-8d64-0f4a75b5aaac" />
+                  <neume facs="m-7ecdc5e7-2dd1-413b-bbd9-097a6f780179" name="Punctum Simple" xml:id="m-f5fbb17b-930b-42cf-9862-c938a996febf" />
+                  <neume facs="m-af894d3e-b802-4bff-b378-e6aba958fafc" name="Virga Simple" xml:id="m-94c047d4-24ee-4d7a-9841-92fcfb5929a1" />
+                  <neume facs="m-398769e8-1c40-4b4a-8269-0a6502cc3ef3" name="Clivis Simple" xml:id="m-7b617749-114e-4c4a-acb8-6ce1cf0ad3ce" />
+                  <neume facs="m-a1acb7a7-4f5f-4ab3-bf4c-35b2e0dc6b3d" name="Tractulus Simple" xml:id="m-d9265c31-9415-49f0-94aa-c6c9ad86a606" />
+                  <neume facs="m-72908337-9806-4889-930a-afbc3c91d425" name="Tractulus Simple" xml:id="m-7627449e-a9a2-4442-96f4-7083274a93a7" />
+                  <neume facs="m-33b37d30-194e-472a-8cf5-68870bcc167e" name="Letter I" xml:id="m-f47d7d78-0613-4f8e-bf54-55433fb84003" />
+                  <neume facs="m-4e3f121d-acfb-4aed-a739-d2fe51adb20d" name="Virga Simple" xml:id="m-1a98add7-e920-401f-b84d-e49fc9d8582d" />
+                  <neume facs="m-2f61f35e-b8e2-4565-900f-5628997fea9f" name="Virga Simple" xml:id="m-b239a3d2-7615-41cc-87de-cc4fa21ced63" />
+                  <neume facs="m-d4d37ab8-c96d-4155-8844-d833e576df3c" name="Pes Quadratus" xml:id="m-b44dff62-1a27-42e4-a56e-d2149db55216" />
+                  <neume facs="m-88734142-ecdc-4ecc-ba92-3e692d7bd300" name="Clivis Episema c" xml:id="m-750d6400-43d6-4a11-9bb5-b8e715c86dde" />
+                  <neume facs="m-61e68e9a-2ad7-465f-b215-c177be7e906b" name="Tractulus Simple" xml:id="m-45fc0087-3952-47a3-a670-7d7ecd2296fa" />
+                  <neume facs="m-c6ce94e9-79f4-4516-88a7-32508b292114" name="Letter S" xml:id="m-18e54513-2e89-4d8b-8332-128ae22c24cf" />
+                  <neume facs="m-6473c632-3ddb-4241-8dc6-dd0bcaee928f" name="Virga Episema" xml:id="m-5758e13b-4c70-44ca-97d0-83c49f75a1dc" />
+                  <neume facs="m-3c328ee0-766c-42b8-a60e-230f9c8e416b" name="Clivis Simple" xml:id="m-7ac6220d-f746-4e86-8145-eff4a0f34e0a" />
+                  <neume facs="m-b6fdbac2-a01d-4536-85e2-4859c5e63ce8" name="Letter E" xml:id="m-7a56ed9f-2cf5-4d65-a59c-bcbf76f8b2d4" />
+                  <neume facs="m-cf3f4959-4971-4bed-9d0e-04fa4ef540b6" name="Virga Simple" xml:id="m-1116a1f6-624c-4e1f-999c-cfc86882fafb" />
+                  <neume facs="m-06dbeb6a-8d58-4c7c-a2b3-f69635c04c04" name="Clivis Episema c" xml:id="m-a3d7f7b4-a2fd-47c3-a25e-d1eed51936c5" />
+                  <neume facs="m-24e1fe4c-ec6e-49b2-9a4a-87646fd9d95a" name="Tractulus Simple" xml:id="m-39d4f7c5-8488-4fb9-b7a5-edb369744bd7" />
+                  <neume facs="m-0c052ee8-ad1a-4603-9e8d-08edee8c83b5" name="Tractulus Simple" xml:id="m-83d06eb6-04d7-4207-95f2-b358a4eb36db" />
+                  <neume facs="m-983966c5-44d0-4ccf-8006-946130d28e92" name="Virga strata (or with Punktum: Pressus maior) Simple" xml:id="m-a5099e3d-2c0c-4fab-ad0b-91fb520b31f3" />
+                  <neume facs="m-0989ac43-ff1a-4484-b0bd-0ced0af4e70c" name="Punctum Simple" xml:id="m-642980b3-9bab-494b-970a-307c2459aa4f" />
+                  <neume facs="m-20eb2081-8d92-41c7-8fbf-bf81ff36f724" name="Clivis Simple" xml:id="m-16e28311-dfe8-4fe2-8e06-ae2057ed24c0" />
+                  <neume facs="m-4c442c8f-67c9-4e8a-baf0-c63f79d41245" name="Pes Quadratus" xml:id="m-6d14c4d5-1986-4bf0-9d68-f905f19fc4a6" />
+                  <neume facs="m-ed263e9b-71f2-449e-ba67-db2a8a215fa9" name="Virga Episema" xml:id="m-d0ea6deb-48dc-4cee-9974-d4ea0475c28a" />
+                  <neume facs="m-8ac349e7-16a4-474e-b969-4c41bc34788d" name="Virga Simple" xml:id="m-e98d59d5-8941-4685-88a3-9aebc4447c97" />
+                  <neume facs="m-4d7d8df6-5446-4ad2-9e5f-bd9b403eecd8" name="Virga Simple" xml:id="m-251afb2b-b03a-49c9-8ae8-e68cbdd0ab26" />
+                  <neume facs="m-bf1bedde-fd51-4271-9661-a039daf3ae13" name="Liquescent Virga aug. or Clivis dim., Cephalicus Simple" xml:id="m-682faae8-89b1-4f4c-a4fb-f5b5b9d8f4ad" />
+                  <neume facs="m-a260b7da-dcf9-452b-a2a4-57d7ba4a264c" name="Pes Rotundus Episema" xml:id="m-76e33811-3eaf-4ea9-b6b2-c110e502cc12" />
+                  <neume facs="m-a85c3ffa-5908-47f0-9f05-9cb20695f899" name="Virga Simple" xml:id="m-9a21b6f1-a134-41ec-93ba-e475252304d4" />
+                  <neume facs="m-3dc5ce63-cb4a-4b38-a26a-75820b026a9e" name="Clivis Episema c" xml:id="m-aba90c35-a375-4127-afeb-19191829ef69" />
+                  <neume facs="m-ef9448a3-cf6a-406a-8d3c-d552feb948da" name="Tractulus Simple" xml:id="m-3da98e80-7f9f-4f3c-befb-40c691700138" />
+                  <neume facs="m-61630ed8-397c-445e-83dc-b39586e81f69" name="Tractulus Simple" xml:id="m-5716c97f-12a1-42f7-9c85-fa30c3f9624b" />
+                  <neume facs="m-71ce8165-5fff-4bcf-bb45-7815ab5be6ce" name="Tractulus Simple" xml:id="m-d859f34b-47b2-48a5-a0c3-f46d273b194d" />
+                  <neume facs="m-8ca69018-3bef-4d99-b280-cebaf4fa26b7" name="Pes Rotundus" xml:id="m-f205f651-a242-474d-9f6b-ccf07965d248" />
+                  <neume facs="m-24257ef1-e962-48ee-828b-732a64e9d6a2" name="Virga Simple" xml:id="m-61e9fb5a-8adb-4f0d-b444-9203a9d28cb6" />
+                  <neume facs="m-06d3b269-5943-40ac-9937-ad17b749e1d9" name="Tractulus Simple" xml:id="m-0661f887-7982-44ff-908c-4b2ccb5305b6" />
+                  <neume facs="m-8c2c392c-6049-4ec8-a4c4-1810c2f4635c" name="Virga Simple" xml:id="m-b9266f14-3feb-4e51-8c43-3e6cffe91c60" />
+                  <neume facs="m-c99b3181-08b2-4c22-b76f-0296cab6b027" name="Letter E" xml:id="m-312ca4a5-8bde-47cc-88c3-d4eec7e36125" />
+                  <neume facs="m-37aeeb38-64ad-4224-bcb3-fc786eb85ca5" name="Letter M" xml:id="m-b864d31c-24d1-4176-ae4e-fe9576f9578e" />
+                  <neume facs="m-33b19026-7574-4bae-a0ac-209ab0993c66" name="Virga Simple" xml:id="m-d5553fc8-5ea7-4a40-9347-57b7e289b1d0" />
+                  <neume facs="m-f45864e1-e957-4780-977a-182ad511ecb8" name="Tractulus Simple" xml:id="m-94b5d802-9f52-439f-9e3d-0b868bc78ce8" />
+                  <neume facs="m-148b3e52-88c5-4fc2-b071-91f05e180a26" name="Porrectus Simple" xml:id="m-4436bfb9-8ed4-4e2d-a3b1-32712a476daa" />
+                  <neume facs="m-2cc7c49b-5788-4f86-ba65-a157bf7a50b9" name="Letter L" xml:id="m-f8b22656-f469-4387-8b8c-3ea1e8685e9b" />
+                  <neume facs="m-589ef650-5078-43eb-93a7-cbd3a3f491a4" name="Letter C" xml:id="m-e4aed3ef-7bad-4218-b445-75358797c98e" />
+                  <neume facs="m-4dd17e29-d9e5-40a0-a009-15b84c7924b1" name="Pes Rotundus" xml:id="m-1573a394-d006-4ab5-9155-a599ce002369" />
+                  <neume facs="m-8e08d632-7d13-4780-a788-26a96bda9ba7" name="Virga Episema" xml:id="m-efef3f35-142a-440d-8dfb-f464062c7324" />
+                  <neume facs="m-dadb5542-85b8-4eac-99ee-f90d46cdfadc" name="Pes Quadratus" xml:id="m-fdc8d77f-0583-4d30-806a-eac9e2307143" />
+                  <neume facs="m-446f2141-b2c4-4139-a1d3-0667b33078ba" name="Letter I" xml:id="m-45e2f4d4-750f-496a-b07f-64fd1e939243" />
+                  <neume facs="m-6a74f8c6-be38-4eb4-88e3-03af3f10d0d2" name="Tractulus Simple" xml:id="m-4855ec34-bfe3-4545-b1f8-282239f12006" />
+                  <neume facs="m-ed0cc27b-0875-451a-99a8-ade7fc0874c1" name="Tractulus Simple" xml:id="m-c9ab95cd-63aa-4d78-af79-55f11dd40a3c" />
+                  <neume facs="m-575ba071-cfba-4d88-b825-ca598526a261" name="Virga Simple" xml:id="m-173df986-1dbc-46fd-bd52-e3023e34c007" />
+                  <neume facs="m-45039dda-dc85-41ea-9887-998672103369" name="Pes Quadratus" xml:id="m-901f1206-9af9-421b-9526-de92c1af6e9c" />
+                  <neume facs="m-5f0a2cf2-0b0b-4f48-b287-bb0f33abd2ab" name="Tractulus Episema" xml:id="m-2385a4dc-e034-4c06-a7aa-45f3e071b594" />
+                  <neume facs="m-7e1cc22a-0eeb-4e4c-8f75-a8b2d64c4358" name="Tractulus Simple" xml:id="m-37ee0e29-6f08-40f5-8166-d19ed12ef3a2" />
+                  <neume facs="m-856e3696-f536-4d22-b14c-36a74eada44e" name="Virga Simple" xml:id="m-21f541d2-4de1-42e3-b14c-64dedbe7df73" />
+                  <neume facs="m-55c7c792-d655-47ca-a50c-7210495411cd" name="Virga Simple" xml:id="m-36bed4dc-5763-413b-b661-74b6fb0914f5" />
+                  <neume facs="m-85731bba-98e1-48a8-bde1-7888ee97460b" name="Tractulus Simple" xml:id="m-8a3de5f7-6d37-43d2-b4f5-534f1565dd0f" />
+                  <neume facs="m-bcd32729-a223-4e03-8e9a-4d62aa22d885" name="Oriscus Simple" xml:id="m-a42af6e2-46fd-4623-b26c-71ecafb85e95" />
+                  <neume facs="m-2a931b53-6885-4a5f-a732-e1bc377bd1c9" name="Virga Episema" xml:id="m-c0e138b4-37c0-4e14-a78b-7dbd073f47b3" />
+                  <neume facs="m-3e4fc350-eaa8-42c7-adbd-c1214973a438" name="Liquescent Punctum aug. or Pes dim., Epiphonus Simple" xml:id="m-07ec069f-fbbe-4306-aea7-0520c5019a8f" />
+                  <neume facs="m-4a2a8e75-1d2f-4faa-9744-01028cd6cd62" name="Tractulus Simple" xml:id="m-84e706f1-ecf4-4940-9795-2df1b836a8ca" />
+                  <neume facs="m-58c595ae-4bd2-4c61-ac47-e48379c65ec0" name="Virga Simple" xml:id="m-6097b3d3-27ea-4507-9cfd-671567d8e602" />
+                  <neume facs="m-feb8295f-7330-4f56-ba93-f2a28a2ab584" name="Virga Simple" xml:id="m-9ea294fd-8948-42d8-a945-26986f268914" />
+                  <neume facs="m-ee41c1a8-fa01-410c-97e2-eb455ee543b8" name="Virga Simple" xml:id="m-76f9aef8-fa94-4d24-adf5-532659121cdf" />
+                  <neume facs="m-12dbc1fe-dc29-48b2-a14c-ae939680e650" name="Clivis Episema c" xml:id="m-9c66fe68-fe34-4059-a28a-24c359b62439" />
+                  <neume facs="m-4bd2471f-f02b-4856-9742-1b9e6e5b4e11" name="Virga Episema" xml:id="m-ad615643-1e0c-4d2d-8573-89ce8acdb204" />
+                  <neume facs="m-39128a2f-2f2f-412b-87d9-c2d8f5dafcfc" name="Letter E" xml:id="m-12b97a27-fc8b-43c4-ab31-8cefdf6abe65" />
+                  <neume facs="m-52b80f9d-2da0-41d2-a960-16e7a52894ef" name="Letter C" xml:id="m-d6116f11-9673-47f8-9d72-81e5238458e5" />
+                  <neume facs="m-17cb14b2-2451-4e6d-be91-27c94f020c69" name="Liquescent Punctum aug. or Pes dim., Epiphonus Simple" xml:id="m-1113693e-aca2-4821-8573-632761a0074f" />
+                  <neume facs="m-ced05619-d5dd-4198-9f5f-cfefa4b1cdde" name="Torculus Simple" xml:id="m-07eff481-983e-4f91-927d-1295c6af8acd" />
+                  <neume facs="m-735f8fff-e411-4710-b8d4-829039a385fb" name="Virga Simple" xml:id="m-cc3b67a4-82c7-4621-9094-dad71d864b6b" />
+                  <neume facs="m-fc7a92ca-9b79-435a-848a-f7204ae266bc" name="Virga Simple" xml:id="m-009647fb-af24-4104-b6fb-da3484ac63e6" />
+                  <neume facs="m-2cfe45fd-0eff-4f20-911d-b91c3054b04f" name="Virga Episema" xml:id="m-a22961be-fd90-455e-86d6-66d0d2cce409" />
+                  <neume facs="m-a0843e60-78be-40ba-8231-de54af7c4550" name="Tractulus Simple" xml:id="m-d223279b-945e-4b39-b90c-649846209dad" />
+                  <neume facs="m-82a726a7-cf25-4813-8649-f3375c0dd48b" name="Virga Simple" xml:id="m-549cf27d-d9f7-4654-8e9c-48bc106ce6e2" />
+                  <neume facs="m-b5db5f19-5ab1-4459-b891-3475b13b5a5d" name="Torculus Simple" xml:id="m-0ed61d86-d083-4ad5-8ee1-51f3590cff51" />
+                  <neume facs="m-981844b3-ec18-49a3-aad8-681bbe520219" name="Tractulus Simple" xml:id="m-85e8d49d-eb02-4ff1-a1d9-0f7a0abd8ad4" />
+                  <neume facs="m-a660807d-4c18-40b1-86b4-474aba172394" name="Tractulus Simple" xml:id="m-4c5fe5e0-335a-4215-90e9-9a0e6e282432" />
+                  <neume facs="m-ab2b3f9b-e7e7-4110-88ef-09e14b955c31" name="Clivis Episema c" xml:id="m-04cdfee6-4027-4ef5-bddb-3e349ee87ca6" />
+                  <neume facs="m-93eefb66-be35-49ee-b224-07e67ef97835" name="Virga strata (or with Punktum: Pressus maior) Simple" xml:id="m-a54c75e7-0ae8-4367-811d-ee933651b3df" />
+                  <neume facs="m-c635b3eb-0269-46a7-9bf4-7baa11cd9cff" name="Torculus Episema a" xml:id="m-2f42973f-0c51-48ba-a4d5-bf4dd5086acb" />
+                  <neume facs="m-9303131f-fb0f-42f7-95b5-5cd939a0e54c" name="Punctum Simple" xml:id="m-4562ca2f-09ac-424b-9528-50897e47aa3a" />
+                  <neume facs="m-a8d8fe07-f5e9-443c-929b-758cedf2a2dd" name="Pes Quadratus" xml:id="m-f41da4f4-2332-4374-8cb4-43af8234e1ee" />
+                  <neume facs="m-a4a80e13-a370-4048-b54f-f4a9a35b03fc" name="Virga Simple" xml:id="m-4ab33dca-02ac-432f-bfc2-e766c6f43bc7" />
+                  <neume facs="m-4ba299b1-1c91-49a8-8a04-43ac9bae3f9e" name="Clivis Episema c" xml:id="m-ff8749b8-cbc4-4f61-adaa-fd8aa0329896" />
+                  <neume facs="m-3aee7cea-27ea-45d0-87fc-7e26668eec0d" name="Liquescent Virga aug. or Clivis dim., Cephalicus Simple" xml:id="m-6308f09c-9e19-4eb0-b814-90d0c15518d8" />
+                  <neume facs="m-ad763ec8-df11-4bbe-a9af-05ac388120a6" name="Clivis Episema c" xml:id="m-a02bcb52-a949-47be-bfdb-4b1f665c71ee" />
+                  <neume facs="m-135adefd-2243-4dca-9666-b3275b3498f3" name="Clivis Simple" xml:id="m-55e0b14a-4248-49bd-85b1-2df3729cfb3d" />
+                  <neume facs="m-a461bb68-8696-4feb-b663-b91c19841db1" name="Clivis Episema c" xml:id="m-2d783318-880e-44da-81c0-c288f6b9d84a" />
+                  <neume facs="m-e26c3e7c-1a3d-4b09-82d3-33eb745c00a3" name="Unnamed" xml:id="m-5a7ab2aa-c481-4d6d-b2ce-8970d296d461" />
+                  <neume facs="m-503d7027-3420-4ce6-bcc2-29ee4a7ac1f2" name="Liquescent Virga aug. or Clivis dim., Cephalicus Simple" xml:id="m-e98b0711-a095-46e3-ae88-ca633f23993f" />
+                  <neume facs="m-1f9aea25-0473-4ae6-96fe-ce437f25d8aa" name="Letter I" xml:id="m-fff40eef-d992-4aaf-892c-2f806303d949" />
+                  <neume facs="m-e9ae958d-c5ae-4274-88fc-383ce81f0b70" name="Clivis Simple" xml:id="m-0070a62b-3a81-4bd2-aa87-eb1ce228fb2c" />
+                  <neume facs="m-2453e4bb-66ed-4fef-b188-6c0449caffb9" name="Pes Quassus" xml:id="m-f16c0863-38f2-40bc-a914-dd30a876f84f" />
+                  <neume facs="m-d05416b6-d0f6-455c-b5f4-ad1883093fd7" name="Punctum Simple" xml:id="m-00cced0d-df45-45e0-aec0-5807d9aa764f" />
+                  <neume facs="m-3bd423a3-cdb1-4b78-96a5-f71f3006f0ba" name="Virga Simple" xml:id="m-1fdab342-7af8-4536-8f80-eb47a145f051" />
+                  <neume facs="m-bc0bb728-860f-4687-803d-054b62f7f383" name="Oriscus Simple" xml:id="m-590067d6-f4a0-480b-8d1c-d36d56334230" />
+                  <neume facs="m-593a05d9-fda1-4e2a-a1e4-fa050704823a" name="Pes Rotundus Episema" xml:id="m-3b7298cf-c3fa-425d-a8cc-80f36b314545" />
+                  <neume facs="m-3d7c3aca-252d-4efe-a9a1-ec75fe3b477a" name="Quilismatorculus Episema two" xml:id="m-c249e362-4f42-4e56-b92a-6b5f9b645d4b" />
+                  <neume facs="m-57a48fb0-55a0-4370-8294-ca47e126f994" name="Tractulus Simple" xml:id="m-e666135f-8fa6-4da6-bded-4a76bb192205" />
+                  <neume facs="m-11402616-1907-47f2-b737-c13491b940b7" name="Virga Simple" xml:id="m-20f0a4fd-5fee-4faa-b5b9-10434c2c32a1" />
+                  <neume facs="m-7c09ebea-a6f5-461b-b75e-8e79683df2fa" name="Virga Simple" xml:id="m-a7204431-d74b-405e-a8fd-1d0f04747a4b" />
+                  <neume facs="m-5b3cda10-583e-403f-a7dc-56390c891896" name="Clivis Simple" xml:id="m-83a035a3-8fb2-424d-ab05-b3d62c960fc1" />
+                  <neume facs="m-497b10a4-a718-4b2e-9424-8a7c25fab697" name="Unnamed" xml:id="m-d19fa58f-d585-4b62-9060-ad004be50229" />
+                  <neume facs="m-4ca7d7b6-fce4-4d6f-82fb-5eb58ae080fb" name="Letter I" xml:id="m-647f1618-f6fd-483e-b617-3512d9c42f9a" />
+                  <neume facs="m-f96f831d-1e3e-4592-ba08-c092bddd1fbd" name="Clivis Simple" xml:id="m-36f08bf5-9864-4d40-a001-7d187c3bc2bf" />
+                  <neume facs="m-39c0fdb2-8bf1-4b9b-8abf-5207413be832" name="Letter C" xml:id="m-817100cd-0f8b-4cd9-a78e-ec65430827e6" />
+                  <neume facs="m-32381846-b975-4443-a94a-fabaebbfebda" name="Clivis Episema c" xml:id="m-7486964c-4a49-4dbb-a44a-4dab6c3e2b05" />
+                  <neume facs="m-9efbf4cb-7af6-4850-b5e4-a571949a60d0" name="Letter E" xml:id="m-9d6dcfe5-0772-464b-a87f-d004edffd55f" />
+                  <neume facs="m-6612786b-79a7-4b8e-ab67-6d5a5e481fe8" name="Oriscus Simple" xml:id="m-0139ecc1-6b6e-466b-b7ea-3f215d8e9e59" />
+                  <neume facs="m-8aa7966f-4f1f-47fc-bc1b-45867b54cef6" name="Torculus Episema a" xml:id="m-3b71f615-f4a2-4e89-b828-618f18b9b3aa" />
+                  <neume facs="m-32012707-bae0-41cd-aaa8-9b691554f08f" name="Letter I" xml:id="m-11a927eb-d7ab-4bdc-a832-12c805930bd7" />
+                  <neume facs="m-50652e25-33d9-4044-9d4c-058e6faef38a" name="Tractulus Simple" xml:id="m-83d0d712-ed31-4da4-82a2-021efd905552" />
+                  <neume facs="m-45e1dcc4-5b4b-41cb-8dc9-5d4806018fd3" name="Punctum Simple" xml:id="m-fa9d6c7c-f7bd-491a-9b04-14c46b363271" />
+                  <neume facs="m-08b0a4c0-ec5f-4cfa-a6cd-c763870d65af" name="Pes Quadratus" xml:id="m-ec45ed8f-285a-4b0d-8403-13c3a25690cb" />
+                  <neume facs="m-bf406a88-2aa9-42c0-a538-44f2998ce183" name="Punctum Simple" xml:id="m-3ff7d95e-1c67-4257-b8db-137d44d9fd62" />
+                  <neume facs="m-1fe89a7e-9d47-47f6-aef3-817fa37631e4" name="Tractulus Simple" xml:id="m-37600b3a-f4e5-4cdb-91ae-83c107332995" />
+                  <neume facs="m-60950f3d-381c-43b0-907a-35b2c10187a2" name="Pes Rotundus" xml:id="m-1774d442-58e2-450e-87b9-ca7abbff70d1" />
+                  <neume facs="m-b198501e-f244-4add-a8de-4bf0de20c792" name="Virga Episema" xml:id="m-c724548e-92ec-460a-bb88-e78379fd4643" />
+                  <neume facs="m-88ba702e-9b0e-42b0-a2a5-3a3d9eae4750" name="Punctum Simple" xml:id="m-1cc939d7-0067-4c1f-97ad-b1b81b950713" />
+                  <neume facs="m-b5948afd-0287-45c8-b79e-ca6cf89496e9" name="Punctum Simple" xml:id="m-8f59e123-33ba-4c01-9cc9-3dd5706e94a6" />
+                  <neume facs="m-0957d4fa-f9af-42db-8dbf-923bb78f1aa9" name="Virga Simple" xml:id="m-5a4d3b05-d8ee-4b03-aaf5-cf0168c88396" />
+                  <neume facs="m-ee2b7d38-a752-45e8-acce-48ff41e84f8f" name="Torculus Simple" xml:id="m-f9f15ce1-c560-4c05-9b56-96d2c06a5401" />
+                  <neume facs="m-74b04ee9-233e-4420-b7e2-f60366cbe272" name="Oriscus Oriscus in Salicus b" xml:id="m-62491bbc-f37a-4fc3-85f2-8e4ccef5cbad" />
+                  <neume facs="m-b8672f81-3cbd-43e5-8cb8-6157d3703c39" name="Clivis Simple" xml:id="m-fe8dd1a2-394d-44b6-b8d9-958c8501f048" />
+                  <neume facs="m-d50587ab-ca42-4b0d-929e-a8fdf4627651" name="Punctum Simple" xml:id="m-de69333e-acff-4ae9-a754-5067facec485" />
+                  <neume facs="m-aef1cb3c-a840-4b3d-a7ef-1051f7d1b6f9" name="Oriscus Oriscus in Salicus b" xml:id="m-7a43ab61-892a-4657-a585-ebd678e50478" />
+                  <neume facs="m-558c7cb6-da04-48c5-8d61-9c2569566038" name="Virga Simple" xml:id="m-9e648549-d901-4b05-9637-5bb6d48d4473" />
+                  <neume facs="m-7e4e2b05-2630-438d-961b-67f5fe726bdd" name="Tractulus Simple" xml:id="m-2612cd5b-7509-4469-ae70-52a8d774a425" />
+                  <neume facs="m-aafdf3d9-ba34-4af8-b243-826ffe4eb2b6" name="Torculus Simple" xml:id="m-0f76dad7-0b4d-4060-8355-6f3866333002" />
+                  <neume facs="m-4b56cf64-5c24-4758-9a79-768e0c2a62e7" name="Unnamed" xml:id="m-370be7d5-856b-418f-ac03-8d0def325574" />
+                  <neume facs="m-eb183361-ce61-4d76-b1f7-3e1448b67744" name="Torculus Episema a" xml:id="m-adcee2e1-bb47-4125-a0bd-7029b25ac296" />
+                  <neume facs="m-8e3a90dd-0cdf-41bd-b35c-a7e483fa3d24" name="Punctum Simple" xml:id="m-78ecc439-f280-4aab-bf17-6cae88cff602" />
+                  <neume facs="m-9249992d-4087-4809-90d2-da7142a21dec" name="Oriscus Oriscus in Salicus b" xml:id="m-c3966ea8-e2b9-4f2c-8d2c-db34926b5a14" />
+                  <neume facs="m-e1b0da22-83d3-41e6-aebf-529ff5d1d9b6" name="Virga Simple" xml:id="m-e2fdcbc6-98b4-455c-aa5f-ee2258d47842" />
+                  <neume facs="m-5a439123-b717-470c-b595-58e2d703ccc7" name="Torculus Simple" xml:id="m-5d842f09-3ec8-46a4-8537-ecd0250b3d28" />
+                  <neume facs="m-c9b5365f-0d00-4ed8-9c97-79287152c0b0" name="Virga Simple" xml:id="m-41789228-c5a0-40c5-8a86-986de5d51c83" />
+                  <neume facs="m-282c9606-d213-4cf8-9fe0-878962b1a5cd" name="Pes Rotundus" xml:id="m-f03b6066-268f-4861-9d67-8168faa66175" />
+                  <neume facs="m-e68e6dc1-4681-4696-aecb-7273c90d891f" name="Clivis Episema c" xml:id="m-cca703a6-a448-40e6-95f9-e0a5d89ce404" />
+                  <neume facs="m-6770010b-bb2a-415c-aa41-e6aafa7175df" name="Torculus Episema b" xml:id="m-55bb7636-c9ab-465b-b1b2-c531a15cbc37" />
+                  <neume facs="m-b49aed4b-7ae2-4ddf-8ac3-128557043a72" name="Virga Simple" xml:id="m-3a635bc4-c895-49eb-81d0-5ff0d354ac68" />
+                  <neume facs="m-37384faa-edf8-4739-a1a2-7aa10ff798ec" name="Punctum Simple" xml:id="m-c8e7783f-004f-46bb-92d9-208f67063be8" />
+                  <neume facs="m-1e8c44f1-b722-401f-95d8-0b628fb173a8" name="Punctum Simple" xml:id="m-a134a659-f741-4166-b2ea-e414e8b0a258" />
+                  <neume facs="m-53a12b4b-fb92-438f-b136-edbf86b46208" name="Virga Simple" xml:id="m-99c2f2b6-3f32-427d-93ee-c7cd722fa0bd" />
+                  <neume facs="m-59331171-049f-4152-8fcf-e21a102051fe" name="Oriscus Oriscus in Salicus b" xml:id="m-34e3dad7-4887-4128-95c1-99d954eef201" />
+                  <neume facs="m-7bb2aa8b-059e-427e-a357-6061570b637e" name="Virga Simple" xml:id="m-3db76d54-c28f-485e-928a-b37a29da460f" />
+                  <neume facs="m-d8ec41a5-cdaa-4c89-9762-cfdf43e363ce" name="Clivis Episema c" xml:id="m-f7910004-e437-4990-b80e-ac866762ee60" />
+                  <neume facs="m-c4edecb4-e51b-4047-8bc1-adb3a12b6ec3" name="Clivis Simple" xml:id="m-73263271-7d21-4a5c-93d2-7ddcc1f6edf3" />
+                  <neume facs="m-26d38988-27fc-4d47-ac18-0bcf1e70e330" name="Torculus Episema a" xml:id="m-d3d54d61-8ca7-42b8-bbdc-4339c2827a52" />
+                  <neume facs="m-6202c98b-4837-4e74-9af5-9dcfc5fbc628" name="Punctum Simple" xml:id="m-91e37135-52b2-409d-9377-9d471bf89b5a" />
+                  <neume facs="m-703f166b-007d-434c-b641-82f278194814" name="Punctum Simple" xml:id="m-a38293cf-e1fe-4459-9684-98f040f19278" />
+                  <neume facs="m-56716fb5-fcda-41d9-9459-d43d5c82e79a" name="Virga Episema" xml:id="m-86241b9f-3750-4f95-a6b8-946957b344ac" />
+                  <neume facs="m-05189c4e-354b-43e5-9a8e-73d3d2c65bbf" name="Virga Simple" xml:id="m-791bbfd1-8b15-4c91-a9ed-e0f692a172bc" />
+                  <neume facs="m-ddb3754e-e4ab-4a7c-ba3f-fa7676670986" name="Tractulus Simple" xml:id="m-ade67133-ab60-4870-9d59-5a907ca715d1" />
+                  <neume facs="m-8074a338-7f95-4fc0-9efc-dd41c05b4df9" name="Virga Simple" xml:id="m-8555e2ec-a3a3-49e8-92f1-410a01c76645" />
+                  <neume facs="m-ebecb15b-6a63-4b8f-811c-9818d78c318a" name="Punctum Simple" xml:id="m-870a37cf-1c1a-4720-8429-0644cbe6e3aa" />
+                  <neume facs="m-abab141c-c83b-4d72-80ac-3f2bbb2f7e09" name="Punctum Simple" xml:id="m-08da5561-ed41-4d94-bc53-96db1295595b" />
+                  <neume facs="m-24600189-6140-43d2-96a5-d23a32c441bc" name="Letter E" xml:id="m-b2b3296b-b309-48fd-98c1-16465b3b5b14" />
+                  <neume facs="m-b6941e56-8b5f-4080-995a-91e0a3a13834" name="Tractulus Simple" xml:id="m-16d58eea-3677-40fa-90e4-e783cd51bd85" />
+                  <neume facs="m-3434135f-1119-469e-81f8-e77604228a60" name="Letter E" xml:id="m-2c036d5c-d8a7-45c0-b3d5-909ae3101839" />
+                  <neume facs="m-5949864a-a3d8-4b02-aae0-15ec0ddd48dd" name="Tractulus Simple" xml:id="m-fc63ffb9-8e0e-4c3e-8105-e4bbd76cdec7" />
+                  <neume facs="m-afda1181-0206-45a4-aeaf-f71bdb9914d5" name="Clivis Simple" xml:id="m-720ff381-8dae-429f-a614-8ca1c2e1da4f" />
+                  <neume facs="m-d99246bd-8325-4a0b-b66a-71987a51c82f" name="Clivis Simple" xml:id="m-383402c9-8643-456c-92a8-093988df4fa3" />
+                  <neume facs="m-397f1ec5-d130-4d27-a4d4-e899426466ad" name="Clivis Simple" xml:id="m-e195ada0-5103-43be-beb9-f2addfe3d24e" />
+                  <neume facs="m-bbc15d93-3639-4ed9-9c4d-22d770203c28" name="Tractulus Simple" xml:id="m-19d964ba-099f-470d-b16c-5755dc435b2b" />
+                  <neume facs="m-87c2b151-c758-46bd-a12d-f82a8499baf6" name="Virga Episema" xml:id="m-3ab77297-54ad-487b-b238-ef66a57ef4ec" />
+                  <neume facs="m-97121e8b-8dd1-415c-a4df-f7b8f160a0c7" name="Unnamed" xml:id="m-0127c45f-6286-4c27-b71c-be5bbf4163e5" />
+                  <neume facs="m-1308d576-afb4-40fb-9f44-129a4114feb4" name="Clivis Episema c" xml:id="m-49a9e064-fe5b-44dd-a02e-11a14f322427" />
+                  <neume facs="m-cf0d234c-efa7-4d85-8120-3f0ad8e54b82" name="Torculus gedreht a (nicht kurrent)" xml:id="m-7083d302-12a4-4205-ac32-219f5af82d18" />
+                  <neume facs="m-9735ebf7-bf09-4d3b-a0a8-58e833db6fb4" name="Clivis Episema c" xml:id="m-6efca224-af3b-4e7a-a141-ca1a9c169d24" />
+                  <neume facs="m-1b935b59-19b5-4710-ab1c-31a72bc17800" name="Unnamed" xml:id="m-5824b075-826d-4f5f-8f8a-2ad66f612719" />
+                  <neume facs="m-2c8a6937-8e1f-4da7-a503-eb58cf459ff7" name="Virga Simple" xml:id="m-91d03841-9163-4924-b0b3-5358de5b8bd9" />
+                  <neume facs="m-6dbb89e9-edf9-4981-bd49-4557594efeeb" name="Stropha Simple" xml:id="m-f7d6b995-0cd5-4f0f-b750-87422ea7fbcf" />
+                  <neume facs="m-74b4caef-4c45-4555-92e4-f89bcebfea9e" name="Tractulus Simple" xml:id="m-e493faad-bcd2-4359-9e51-8cd41817eb39" />
+                  <neume facs="m-c1a10d23-a063-4313-bce3-463f31840385" name="Stropha Simple" xml:id="m-31165328-c05a-49d1-b492-1be789d9ecb8" />
+                  <neume facs="m-2146c52d-b268-4dab-b6c9-5561707d838b" name="Virga Simple" xml:id="m-4ebb39ff-74fc-4ef2-bfd2-34336feb3a49" />
+                  <neume facs="m-89fc5d8d-27cf-4e55-b4c5-b3bba8fafd91" name="Letter S" xml:id="m-a596b98b-6e93-45f4-92ce-ceecaf2116e5" />
+                  <neume facs="m-97df2053-58a5-4c3d-a8e1-a1d76f35f9e5" name="Tractulus Simple" xml:id="m-389f9ff2-d141-48a9-bd72-ba9a4e701749" />
+                  <neume facs="m-bcf38fc5-ea75-4f50-9aa9-a6eff26e8513" name="Tractulus Simple" xml:id="m-378accce-c854-4cb2-8bb6-4b3cb5b1760e" />
+                  <neume facs="m-0aa3c6c0-af05-43c7-8155-2bc371a09d52" name="Unnamed" xml:id="m-a872deda-8fba-406e-9e1f-1cb2faed410c" />
+                  <neume facs="m-e8ac711b-a954-4299-b86f-9d667addefcd" name="Letter E" xml:id="m-e0846711-bf67-4bd4-b39d-a643a84c5fe8" />
+                  <neume facs="m-2ad255d3-e71e-4d93-bb4b-c990c0eb3ac8" name="Porrectus Episema a" xml:id="m-8431b996-1510-457a-9271-858bf98bad4a" />
+                  <neume facs="m-c17f5e5d-4b7f-42a1-aea2-c31ae2345cc5" name="Tractulus Simple" xml:id="m-44c6b062-10c8-479b-8c91-5d5d5dc4dab8" />
+                  <neume facs="m-ee88d98f-92e4-449b-a31f-65ee2b1a606d" name="Torculus Simple" xml:id="m-6c6a160a-3743-4690-afbe-6b7c0b7d92f5" />
+                  <neume facs="m-7a94489a-74a5-4e2b-87cc-7940ca792d58" name="Clivis Episema c" xml:id="m-1e94e1e1-1e11-482b-a33d-a120b74f5497" />
+                  <neume facs="m-42ef96d1-3e61-4b57-9e9a-302616a99669" name="Tractulus Simple" xml:id="m-04ea737a-ec31-4d9b-9b60-cca16bdb354e" />
+                  <neume facs="m-9eda96c1-30c3-4fe3-868c-027cd7480b9b" name="Virga Simple" xml:id="m-e78beb87-5f0a-4965-bd36-12267ca29c03" />
+                  <neume facs="m-23589fe2-6fbd-464a-8780-086c9ecedb7f" name="Clivis Episema a" xml:id="m-2bd318e0-8f61-4b8e-bfb7-391989b7d311" />
+                  <neume facs="m-6d7c9c5f-f424-4b73-8460-db554aa0927d" name="Letter C" xml:id="m-b5be5692-0c7f-4a7b-9848-54452f3690e8" />
+                  <neume facs="m-f2903b23-9fec-4dd1-b51f-5f2d1864d4b5" name="Tractulus Simple" xml:id="m-999d58c7-e55d-479f-962a-38e8926c9daa" />
+                  <neume facs="m-d3b173aa-d52a-4507-8a8b-40f72321cd9e" name="Clivis Episema c" xml:id="m-f019fec3-b30e-4a72-87ea-b9a175102c7c" />
+                  <neume facs="m-a2a3b68b-4c2c-40bb-a8d8-b75f68925271" name="Letter E" xml:id="m-e3cd3f73-98a7-435c-854e-7ba9c43d72e4" />
+                  <neume facs="m-5bfa881c-5741-4154-a177-b91c62411a7b" name="Punctum Simple" xml:id="m-be36f250-a54d-48cf-a16c-e9e558bc4599" />
+                  <neume facs="m-e144e6a7-663c-4abd-abc6-2924bf117088" name="Letter E" xml:id="m-06c22a51-4ac0-4017-947d-de167664de6d" />
+                  <neume facs="m-8f38aeec-34f3-4a25-acf7-1f96a74bedf8" name="Torculus Simple" xml:id="m-25bd5cf7-c3ff-488d-96a7-de5ddb0d90db" />
+                  <neume facs="m-68bca4dd-0083-45ac-beea-7fbc2821b0cd" name="Punctum Simple" xml:id="m-43fa9361-ccc1-4f43-9703-489ee1e34d14" />
+                  <neume facs="m-c8157ab5-e1a7-4b9e-9ca0-dbc80545d24a" name="Punctum Simple" xml:id="m-c152395a-3948-4149-895d-13a10a7419ef" />
+                  <neume facs="m-24a213b6-feb6-438d-bf1c-5f32c7dd7d89" name="Virga Episema" xml:id="m-a9e2f6c7-7318-484d-8f26-7a0683298c57" />
+                  <neume facs="m-78d781f2-5e2d-4e65-8442-08321ee83e75" name="Liquescent Virga aug. or Clivis dim., Cephalicus Simple" xml:id="m-809e8200-0e7e-4403-8b39-325280428175" />
+                  <neume facs="m-57d29385-42bf-4e77-a1a8-496030812cab" name="Unnamed" xml:id="m-92ce78bd-aeaf-406a-b63d-dd5617aa6512" />
+                  <neume facs="m-2c081d3a-6c99-4712-9573-eebab5630bf7" name="Unnamed" xml:id="m-ba142204-3c10-41f9-8761-fb3a0557fd54" />
+                  <neume facs="m-646c764b-1200-4384-868a-6daa5784a28f" name="Tractulus Simple" xml:id="m-de5bc063-b098-47af-b83c-a8d4b2da230e" />
+                </layer>
+              </staff>
+            </system>
+          </page>
+        </pages>
+      </mdiv>
+    </body>
+  </music>
+</mei>
