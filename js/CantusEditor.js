@@ -24,6 +24,8 @@ window.onload = function () {
     var divaInstance;
     var element;
     var selectedManuscript = null;
+    var pageChangeTimeout;
+    var PAGE_CHANGE_TIMEOUT = 0;
 
     function getLinks(htmlCode, hasSubstr) {
         var lines = htmlCode.split("\n");
@@ -127,7 +129,8 @@ window.onload = function () {
             oneToOneMEI: true,
             navbarClass: 'navbar navbar-default',
             pageTitle: 'Cantus Ultimus',
-            disableMultiPage: true
+            disableMultiPage: true,
+            PAGE_CHANGE_TIMEOUT: PAGE_CHANGE_TIMEOUT
         };
 
         var meiEditorPlugins =
@@ -268,7 +271,13 @@ window.onload = function () {
             "style='float:right;' checked/></label></a></li>"
         );
 
-        diva.Events.subscribe("VisiblePageDidChange", switchMeiTab);
+        diva.Events.subscribe("VisiblePageDidChange", function (pageNumber, fileName) {
+            clearTimeout(pageChangeTimeout);
+            pageChangeTimeout = setTimeout(function () {
+                console.log("Now!");
+                switchMeiTab(pageNumber, fileName);
+            }, PAGE_CHANGE_TIMEOUT);
+        });
 
         meiEditor.events.subscribe("NewZone", newZone);
     }
