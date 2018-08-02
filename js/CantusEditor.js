@@ -25,7 +25,7 @@ window.onload = function () {
     var element;
     var selectedManuscript = null;
     var pageChangeTimeout;
-    var PAGE_CHANGE_TIMEOUT = 0;
+    var PAGE_CHANGE_TIMEOUT = 1250;
 
     function getLinks(htmlCode, hasSubstr) {
         var lines = htmlCode.split("\n");
