@@ -102,6 +102,10 @@ window.onload = function () {
 
     function allManuscriptsAdded() {
         $('#loadingHeader').html("Choose a manuscript to load:");
+        if (!selectedManuscript) {
+            var manuscriptId = $("#manuscriptSelect option:selected").attr('value');
+            selectedManuscript = manuscripts[manuscriptId];
+        }
     }
 
     function loadManuscript() {
@@ -274,7 +278,6 @@ window.onload = function () {
         diva.Events.subscribe("VisiblePageDidChange", function (pageNumber, fileName) {
             clearTimeout(pageChangeTimeout);
             pageChangeTimeout = setTimeout(function () {
-                console.log("Now!");
                 switchMeiTab(pageNumber, fileName);
             }, PAGE_CHANGE_TIMEOUT);
         });
